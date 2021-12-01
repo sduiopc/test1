@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Warwickshire Police
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Warwickshire Police there were <strong>8 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>8 officers</strong> and <strong>8 police staff</strong>.
+At Warwickshire Police there were <strong>10 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>3 officers</strong> and <strong>8 police staff</strong>.
 </p>
 <p>
 <strong>1</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>7 officers</strong> and <strong>5 staff</strong>.
+The misconduct was proven in the case of <strong>3 officers</strong> and <strong>9 staff</strong>.
 </p>
 <p>
-Out of the 8 officers and 8 staff identified as having a case to answer for misconduct, <strong>9 officers</strong> and <strong>3 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 3 officers and 8 staff identified as having a case to answer for misconduct, <strong>7 officers</strong> and <strong>9 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>4 officers</strong> and <strong>8 staff</strong> received management action.
+<strong>7 officers</strong> and <strong>10 staff</strong> received management action.
 </p>
 <p>
-<strong>4 officers</strong> and <strong>9 staff</strong> were given a written warning.
+<strong>1 officers</strong> and <strong>6 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>0 officers</strong> and <strong>3 staff</strong> were dismissed.
+<strong>1 officers</strong> and <strong>5 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-cc60d08e7bbba2b2f529" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-2a188f978791022f1638" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-cc60d08e7bbba2b2f529">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Handling of missing person‚Äö√Ñ√¥s investigation - West Midlands Police and Warwickshire Police, September 2017","Response to missing person‚Äö√Ñ√¥s report - Warwickshire Police, July 2017"],["On 18 September 2017 a man was reported missing to Warwickshire Police by his mother and to West Midlands Police (WMP) by his partner. This was following an earlier argument on 17 September 2017 with his partner who he lived with. His partner saw him grab her morphine tablets, but he told her he had disposed of them.\nWarwickshire Police assessed the man as a high-risk missing person. The incident was referred to WMP at 12.49am, who commenced an incident log. At 1am the incident was referred back to Warwickshire and then back to WMP at 1.53am. The incident was referred back to WMP via e-mail, which according to the WMP incident log was not actioned until 6.05 am.   \nAt 7.31am, a WMP officer was dispatched to visit the man's partner and his parents. As part of the ongoing investigation, at 1.48 pm, a missing person log was commenced. The man was graded as medium risk. At 4.16pm, his girlfriend notified WMP that she had found him, unconscious, in his car. The man was declared dead at 5.30pm in hospital.\nThe man's parents raised complaints about some of the contact they had with police officers during the course of their enquiries into their son being missing.\nDuring the investigation, investigators examined the man's mobile phone records and obtained statements from several witnesses as well as telephone recordings and airwaves transmissions. They also obtained a statement from a WMP officer under the misconduct caution for a number of allegations involving the risk assessment and grading for the missing person investigation.\nWe considered that, at the time of the incident, the WMP officer was inexperienced. This was the first time the officer was tasked to take a missing person report through the control room. While there were gaps in recording and actions taken, there was no evidence to indicate any of this was done in bad faith. Based on the evidence available, we were of the opinion that the officer's poor performance should be addressed through the first stage of the unsatisfactory performance procedure.\nWe also identified performance issues for a second WMP officer in respect of their contact with the man's parents; and for a third WMP officer, in respect of their contact with the man's parents and how they conducted a search of the missing man's car.\nAfter reading our report, WMP proposed the following: for the first officer, this would be addressed through a learning debrief, which would also include opportunities to understand the broader issues to consider in relation to missing persons' investigations; for the second officer, the force proposed management action around their manner of speaking with the man's family; and for the third officer, both issues should be addressed as individual reflection and learning.\nWe agreed that their proposals were appropriate in the circumstances.\nOur investigation highlighted some areas for improvement for both WMP and Warwickshire Police around updating live incident logs; for Warwickshire Police, around ensuring that, when a high-risk incident is transferred to another force, this is confirmed verbally by the control room Inspector; and for WMP, around handling emails in the force control room.\nBoth forces agreed to share this learning with relevant staff for dissemination.\n","In the early hours on 20 July 2017, Warwickshire Police received a report of a missing young woman. Concerned that she hadn't returned home after going out the night before, the woman's father had visited a police station twice during the night (at 1.35am and 4.59am) and had spoken to police staff on an intercom - the second call was cut off. The woman's mother then called the police at approximately 5.30am to report her as missing, and explained that she had a mental health condition and may harm herself. The call handler graded this as a 'medium' priority missing person report.\nTwo officers went to the parents' home around 6am to take details and search for information that may help to locate her. Police made a number of enquiries to try and find the woman. After receiving information that she had expressed suicidal thoughts recently, the risk was reassessed and increased to 'high' before midday. A trace on the woman's mobile phone gave the location of a hotel. Officers made enquiries there, but nobody recognised her. At approximately 1pm, hotel staff found the woman dead in one of the rooms.\nDuring the investigation, investigators interviewed police officers, police staff and members of the woman's family. They also examined police records and voice recordings. We served two call handlers with notices that their actions were under investigation.\nBased on the evidence available, at the end of the investigation, we were of the opinion that the two call handlers who had responded to the woman's father's intercom calls may have a case to answer for misconduct for breaching the standards of professional behaviour: the first call handler for not gathering sufficient information from him to be able to risk assess the circumstances around his daughter's absence and for not creating an incident log, which would have required further details to be obtained; the second call handler for not creating an incident log and not conducting further intelligence checks, and not making contact with the woman's mother on her mobile when the intercom call cut off. We completed our investigation in April 2018.\nAfter reviewing our report, Warwickshire Police agreed that the first call handler had a case to answer for misconduct and would receive management action. They were of the view that the second call handler, who had less experience, had not been negligent, but that their performance was unsatisfactory and that they would be subject to unsatisfactory performance procedures.\nThey also added that their control room staff would be advised - and training considered - in relation to out-of-hours calls from an intercom outside a police station automatically timing out after ten minutes, how to reconnect a member of the public when the call is timed out, and ensuring signage is provided to members of the public informing them that the call will cut out after ten minutes.\nAn inquest into the woman's death in summer 2018 concluded that the woman had taken her own life.\n"],["'Welfare and vulnerable people', 'Warwickshire Police', 'West Midlands Police'","'Death and serious injury', 'Welfare and vulnerable people', 'Warwickshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/handling-missing-person%E2%80%99s-investigation-west-midlands-police-and-warwickshire-police'>https://policeconduct.gov.uk/recommendations/handling-missing-person%E2%80%99s-investigation-west-midlands-police-and-warwickshire-police<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-warwickshire-police-july-2017'>https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-warwickshire-police-july-2017<\/a>"],["25-Sep-2018","19-Mar-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-2a188f978791022f1638">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Handling of missing person‚Äö√Ñ√¥s investigation - West Midlands Police and Warwickshire Police, September 2017","Response to missing person‚Äö√Ñ√¥s report - Warwickshire Police, July 2017"],["On 18 September 2017 a man was reported missing to Warwickshire Police by his mother and to West Midlands Police (WMP) by his partner. This was following an earlier argument on 17 September 2017 with his partner who he lived with. His partner saw him grab her morphine tablets, but he told her he had disposed of them.\nWarwickshire Police assessed the man as a high-risk missing person. The incident was referred to WMP at 12.49am, who commenced an incident log. At 1am the incident was referred back to Warwickshire and then back to WMP at 1.53am. The incident was referred back to WMP via e-mail, which according to the WMP incident log was not actioned until 6.05 am.   \nAt 7.31am, a WMP officer was dispatched to visit the man's partner and his parents. As part of the ongoing investigation, at 1.48 pm, a missing person log was commenced. The man was graded as medium risk. At 4.16pm, his girlfriend notified WMP that she had found him, unconscious, in his car. The man was declared dead at 5.30pm in hospital.\nThe man's parents raised complaints about some of the contact they had with police officers during the course of their enquiries into their son being missing.\nDuring the investigation, investigators examined the man's mobile phone records and obtained statements from several witnesses as well as telephone recordings and airwaves transmissions. They also obtained a statement from a WMP officer under the misconduct caution for a number of allegations involving the risk assessment and grading for the missing person investigation.\nWe considered that, at the time of the incident, the WMP officer was inexperienced. This was the first time the officer was tasked to take a missing person report through the control room. While there were gaps in recording and actions taken, there was no evidence to indicate any of this was done in bad faith. Based on the evidence available, we were of the opinion that the officer's poor performance should be addressed through the first stage of the unsatisfactory performance procedure.\nWe also identified performance issues for a second WMP officer in respect of their contact with the man's parents; and for a third WMP officer, in respect of their contact with the man's parents and how they conducted a search of the missing man's car.\nAfter reading our report, WMP proposed the following: for the first officer, this would be addressed through a learning debrief, which would also include opportunities to understand the broader issues to consider in relation to missing persons' investigations; for the second officer, the force proposed management action around their manner of speaking with the man's family; and for the third officer, both issues should be addressed as individual reflection and learning.\nWe agreed that their proposals were appropriate in the circumstances.\nOur investigation highlighted some areas for improvement for both WMP and Warwickshire Police around updating live incident logs; for Warwickshire Police, around ensuring that, when a high-risk incident is transferred to another force, this is confirmed verbally by the control room Inspector; and for WMP, around handling emails in the force control room.\nBoth forces agreed to share this learning with relevant staff for dissemination.\n","In the early hours on 20 July 2017, Warwickshire Police received a report of a missing young woman. Concerned that she hadn't returned home after going out the night before, the woman's father had visited a police station twice during the night (at 1.35am and 4.59am) and had spoken to police staff on an intercom - the second call was cut off. The woman's mother then called the police at approximately 5.30am to report her as missing, and explained that she had a mental health condition and may harm herself. The call handler graded this as a 'medium' priority missing person report.\nTwo officers went to the parents' home around 6am to take details and search for information that may help to locate her. Police made a number of enquiries to try and find the woman. After receiving information that she had expressed suicidal thoughts recently, the risk was reassessed and increased to 'high' before midday. A trace on the woman's mobile phone gave the location of a hotel. Officers made enquiries there, but nobody recognised her. At approximately 1pm, hotel staff found the woman dead in one of the rooms.\nDuring the investigation, investigators interviewed police officers, police staff and members of the woman's family. They also examined police records and voice recordings. We served two call handlers with notices that their actions were under investigation.\nBased on the evidence available, at the end of the investigation, we were of the opinion that the two call handlers who had responded to the woman's father's intercom calls may have a case to answer for misconduct for breaching the standards of professional behaviour: the first call handler for not gathering sufficient information from him to be able to risk assess the circumstances around his daughter's absence and for not creating an incident log, which would have required further details to be obtained; the second call handler for not creating an incident log and not conducting further intelligence checks, and not making contact with the woman's mother on her mobile when the intercom call cut off. We completed our investigation in April 2018.\nAfter reviewing our report, Warwickshire Police agreed that the first call handler had a case to answer for misconduct and would receive management action. They were of the view that the second call handler, who had less experience, had not been negligent, but that their performance was unsatisfactory and that they would be subject to unsatisfactory performance procedures.\nThey also added that their control room staff would be advised - and training considered - in relation to out-of-hours calls from an intercom outside a police station automatically timing out after ten minutes, how to reconnect a member of the public when the call is timed out, and ensuring signage is provided to members of the public informing them that the call will cut out after ten minutes.\nAn inquest into the woman's death in summer 2018 concluded that the woman had taken her own life.\n"],["'Welfare and vulnerable people', 'Warwickshire Police', 'West Midlands Police'","'Death and serious injury', 'Welfare and vulnerable people', 'Warwickshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/handling-missing-person%E2%80%99s-investigation-west-midlands-police-and-warwickshire-police'>https://policeconduct.gov.uk/recommendations/handling-missing-person%E2%80%99s-investigation-west-midlands-police-and-warwickshire-police<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-warwickshire-police-july-2017'>https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-warwickshire-police-july-2017<\/a>"],["25-Sep-2018","19-Mar-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-7a2679b017a0363bc7bb" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-6b23acf21eb3307bad6a" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-7a2679b017a0363bc7bb">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3"],["Welfare and vulnerable people","Death and serious injury","West Midlands Police"],[2,1,1],[1,0.5,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-6b23acf21eb3307bad6a">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3"],["Welfare and vulnerable people","Death and serious injury","West Midlands Police"],[2,1,1],[1,0.5,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

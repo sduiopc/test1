@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Bedfordshire Police
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Bedfordshire Police there were <strong>4 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>8 officers</strong> and <strong>9 police staff</strong>.
+At Bedfordshire Police there were <strong>3 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>2 officers</strong> and <strong>4 police staff</strong>.
 </p>
 <p>
 <strong>None</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>10 officers</strong> and <strong>3 staff</strong>.
+The misconduct was proven in the case of <strong>1 officers</strong> and <strong>0 staff</strong>.
 </p>
 <p>
-Out of the 8 officers and 9 staff identified as having a case to answer for misconduct, <strong>6 officers</strong> and <strong>6 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 2 officers and 4 staff identified as having a case to answer for misconduct, <strong>3 officers</strong> and <strong>6 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>3 officers</strong> and <strong>7 staff</strong> received management action.
+<strong>4 officers</strong> and <strong>4 staff</strong> received management action.
 </p>
 <p>
-<strong>8 officers</strong> and <strong>8 staff</strong> were given a written warning.
+<strong>1 officers</strong> and <strong>0 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>0 officers</strong> and <strong>6 staff</strong> were dismissed.
+<strong>1 officers</strong> and <strong>3 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-1a419bbf167f787bd4b2" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-91229369540ae377681e" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-1a419bbf167f787bd4b2">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4"],["Man becomes unwell in custody - Bedfordshire Police, June 2017","Response to missing person‚Äö√Ñ√¥s report - Bedfordshire Police, July 2017","Stop and search - Bedfordshire Police, October 2018","Use of force on fifteen-year-old boy - Bedfordshire Police, December 2017"],["Bedfordshire Police officers were called to an incident in Luton on 3 June 2017 after a man had crashed his car into a parked car. He was breathalysed by officers, which showed he was just under the legal limit. He was arrested for potential theft of the car he was driving and taken to Luton custody suite, where his detention was authorised.\nThe custody sergeant assigned him level one observations (general observations), meaning he had to be checked on at half-hourly intervals. It was arranged for the man to see the healthcare professional (HCP); she fed back to the custody sergeant that he was alcohol-dependent and had other medical issues, including an enlarged liver. No review of the care plan was made and level one observations continued.\nThe man then fell while in his cell and lost consciousness for approximately 90 seconds. Custody staff attended immediately and began to administer first aid, before handing over to ambulance staff. The man was taken to hospital, and was later discharged, having received sutures to a head wound.\nDuring the investigation, our investigators obtained witness statements from custody staff, custody records (including the risk assessment, medical form and detention log), and CCTV. The custody officer was served with a notice informing him that there was an indication of potential misconduct in relation to the level of observation and care planning. He provided us with a written response.\nWe identified that the custody officer had not followed relevant guidance and training when completing the custody record and carried out observations.\nWe were of the opinion that the officer had failed to perform their duties to a satisfactory level and recommended to Bedfordshire Police that this should be dealt with through unsatisfactory performance procedures.\nAfter reviewing our report, the force agreed with our findings and advised that they would put in a place a development plan for the officer requiring him to refresh his knowledge of professional practice regarding custody.\nWe agreed that their proposal was appropriate.\n","On 28 July 2017, a man was reported missing by a friend to Bedfordshire Police. An officer made enquiries to try locating him. Evidence suggested that the officer went to the man's address given to Bedfordshire Police. However, the officer who went reported it to be the home of a young family and not that of the missing man. The officer conducted checks on previous addresses for the man but the man was not found.\nThe following day the ambulance service contacted Bedfordshire Police reporting the sudden death of a man; this was the same man who had been reported missing the day before and his address was the same as the one provided to police.\nDuring the investigation, evidence identified that the officer had initially gone to an incorrect address when trying to locate the missing person.\nInvestigators interviewed the officer who went to the incorrect address and analysed the officer's actions and decision. Investigators also obtained statements from several witnesses whom the officer had visited and taken information from regarding the missing person.\nBased on the evidence available, we found an indication that the officer who carried out the initial missing person investigation behaved in a manner that would justify the bringing of disciplinary proceedings.\nAfter reviewing our report, the force agreed with our findings. A misconduct meeting was held, at which an independent panel found no case to answer for the officer. No further action was taken.\n","On the afternoon of 10 October 2018, two Bedfordshire Police officers stopped and searched a young black man in Luton town centre. They had been provided with intelligence that the man had been seen doing what looked like drug dealing. The officers attempted to restrain the man within seconds of speaking to him, and without explaining what they were stopping him for. He resisted their restraint, and repeatedly asked what he had done wrong. Without providing an explanation, the officers attempted to handcuff him, and one of the officers deployed their incapacitant spray. Once detained, the man was searched for drugs, and given the reason for the stop and search. Officers did not find any drugs on him and released him.\nThe force referred the incident to us as a conduct matter. Our investigation examined: the way in which the stop and search was conducted and whether it was fair and effective; the force used on the man and whether it was necessary, proportionate and reasonable; and whether the man was treated less favourably by the officers on the basis of his race.  \nOur investigators took a statement from the man and from a police community support officer who was present at the time, and reviewed body-worn video footage of the incident. A CCTV trawl was conducted in the area, but unfortunately no relevant footage was identified. We also reviewed previous stop and search slips for both officers for a one-year period for comparator evidence.\nBased on the evidence available we were of the opinion that a reasonable tribunal could find that one of the officers had a case to answer for misconduct, in respect of the stop and search and the force used on the man. We were also of the view that, although there was insufficient evidence to suggest that the man was treated differently on the basis of his race, there was an opportunity for learning for both officers, as they appeared to be lacking an understanding as to why their actions could have been perceived to be discriminatory.\nWe completed our investigation in August 2019.\nBedfordshire Police reviewed our report and agreed. They also determined that the second officer had a case to answer for misconduct for the poor aftercare the man was given after the use of incapacitant spray. We agreed with their determinations. Both officers will receive management action, to include a formal action plan with linked objective to be formally reviewed by their head of department before any sign off is authorised.\n","On 14 December 2017, Bedfordshire Police were carrying out part of an on-going operation around a supermarket in response to persistent anti-social behaviour. During the operation a fifteen-year-old boy was restrained and handcuffed by a Bedfordshire Police officer and subsequently sustained a broken arm. This boy had been told to leave the area but had remained. Shortly before the boy was detained bottles were thrown at attending officers and an officer was assaulted.\nFollowing a complaint from the boy's father on 15 December 2017, Bedfordshire Police referred the incident to us on 13 February 2018 and we began an independent investigation.\nOur investigation scrutinised an allegation of coercion relating to an alleged conversation which took place while the officer was transporting the boy home. This accusation was dismissed by the Panel.\nFurthermore, the investigation examined evidence relating to an allegation that the officer activated his panic alarm in circumstances which did not require it.\nDuring the investigation, investigators interviewed one officer who was subject of the investigation, examined body worn video (BWV) and obtained statements from the complainant, doctors and several police witnesses. The investigation team also analysed the relevant legislation, national and local polices, briefing slides and operation information.\nOur investigation concluded in February 2019 and we referred the case to the Crown Prosecution Service (CPS) to determine whether the officer should be prosecuted for any criminal offences. In August 2019 the CPS decided there was insufficient evidence to pursue a criminal charge against the officer.\nOur investigation gathered evidence that indicated that the officer had a case to answer regarding his use of force in restraining the child, and subsequent accounts.\nWe made our recommendation to Bedfordshire Police on 17 April 2019. This was rejected on 26 June then, following receipt of an expert report into the victim's injuries, we directed the force on 12 August to hold a hearing, which took place in December 2019. After a full hearing the Panel determined that the officer had not committed misconduct or gross misconduct and none of the allegations were upheld.\n"],["'Custody and detention', 'Bedfordshire Police'","'Welfare and vulnerable people', 'Bedfordshire Police'","'Discrimination', 'Use of force and armed policing', 'Bedfordshire Police'","'Custody and detention', 'Use of force and armed policing', 'Bedfordshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-bedfordshire-police-june-2017'>https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-bedfordshire-police-june-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-bedfordshire-police-july-2017'>https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-bedfordshire-police-july-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/stop-and-search-bedfordshire-police-october-2018'>https://policeconduct.gov.uk/recommendations/stop-and-search-bedfordshire-police-october-2018<\/a>","<a href='https://policeconduct.gov.uk/recommendations/use-force-fifteen-year-old-boy-bedfordshire-police-december-2017'>https://policeconduct.gov.uk/recommendations/use-force-fifteen-year-old-boy-bedfordshire-police-december-2017<\/a>"],["28-Sep-2018","11-Jul-2018","29-Jan-2020","2-Nov-2020"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-91229369540ae377681e">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4"],["Man becomes unwell in custody - Bedfordshire Police, June 2017","Response to missing person‚Äö√Ñ√¥s report - Bedfordshire Police, July 2017","Stop and search - Bedfordshire Police, October 2018","Use of force on fifteen-year-old boy - Bedfordshire Police, December 2017"],["Bedfordshire Police officers were called to an incident in Luton on 3 June 2017 after a man had crashed his car into a parked car. He was breathalysed by officers, which showed he was just under the legal limit. He was arrested for potential theft of the car he was driving and taken to Luton custody suite, where his detention was authorised.\nThe custody sergeant assigned him level one observations (general observations), meaning he had to be checked on at half-hourly intervals. It was arranged for the man to see the healthcare professional (HCP); she fed back to the custody sergeant that he was alcohol-dependent and had other medical issues, including an enlarged liver. No review of the care plan was made and level one observations continued.\nThe man then fell while in his cell and lost consciousness for approximately 90 seconds. Custody staff attended immediately and began to administer first aid, before handing over to ambulance staff. The man was taken to hospital, and was later discharged, having received sutures to a head wound.\nDuring the investigation, our investigators obtained witness statements from custody staff, custody records (including the risk assessment, medical form and detention log), and CCTV. The custody officer was served with a notice informing him that there was an indication of potential misconduct in relation to the level of observation and care planning. He provided us with a written response.\nWe identified that the custody officer had not followed relevant guidance and training when completing the custody record and carried out observations.\nWe were of the opinion that the officer had failed to perform their duties to a satisfactory level and recommended to Bedfordshire Police that this should be dealt with through unsatisfactory performance procedures.\nAfter reviewing our report, the force agreed with our findings and advised that they would put in a place a development plan for the officer requiring him to refresh his knowledge of professional practice regarding custody.\nWe agreed that their proposal was appropriate.\n","On 28 July 2017, a man was reported missing by a friend to Bedfordshire Police. An officer made enquiries to try locating him. Evidence suggested that the officer went to the man's address given to Bedfordshire Police. However, the officer who went reported it to be the home of a young family and not that of the missing man. The officer conducted checks on previous addresses for the man but the man was not found.\nThe following day the ambulance service contacted Bedfordshire Police reporting the sudden death of a man; this was the same man who had been reported missing the day before and his address was the same as the one provided to police.\nDuring the investigation, evidence identified that the officer had initially gone to an incorrect address when trying to locate the missing person.\nInvestigators interviewed the officer who went to the incorrect address and analysed the officer's actions and decision. Investigators also obtained statements from several witnesses whom the officer had visited and taken information from regarding the missing person.\nBased on the evidence available, we found an indication that the officer who carried out the initial missing person investigation behaved in a manner that would justify the bringing of disciplinary proceedings.\nAfter reviewing our report, the force agreed with our findings. A misconduct meeting was held, at which an independent panel found no case to answer for the officer. No further action was taken.\n","On the afternoon of 10 October 2018, two Bedfordshire Police officers stopped and searched a young black man in Luton town centre. They had been provided with intelligence that the man had been seen doing what looked like drug dealing. The officers attempted to restrain the man within seconds of speaking to him, and without explaining what they were stopping him for. He resisted their restraint, and repeatedly asked what he had done wrong. Without providing an explanation, the officers attempted to handcuff him, and one of the officers deployed their incapacitant spray. Once detained, the man was searched for drugs, and given the reason for the stop and search. Officers did not find any drugs on him and released him.\nThe force referred the incident to us as a conduct matter. Our investigation examined: the way in which the stop and search was conducted and whether it was fair and effective; the force used on the man and whether it was necessary, proportionate and reasonable; and whether the man was treated less favourably by the officers on the basis of his race.  \nOur investigators took a statement from the man and from a police community support officer who was present at the time, and reviewed body-worn video footage of the incident. A CCTV trawl was conducted in the area, but unfortunately no relevant footage was identified. We also reviewed previous stop and search slips for both officers for a one-year period for comparator evidence.\nBased on the evidence available we were of the opinion that a reasonable tribunal could find that one of the officers had a case to answer for misconduct, in respect of the stop and search and the force used on the man. We were also of the view that, although there was insufficient evidence to suggest that the man was treated differently on the basis of his race, there was an opportunity for learning for both officers, as they appeared to be lacking an understanding as to why their actions could have been perceived to be discriminatory.\nWe completed our investigation in August 2019.\nBedfordshire Police reviewed our report and agreed. They also determined that the second officer had a case to answer for misconduct for the poor aftercare the man was given after the use of incapacitant spray. We agreed with their determinations. Both officers will receive management action, to include a formal action plan with linked objective to be formally reviewed by their head of department before any sign off is authorised.\n","On 14 December 2017, Bedfordshire Police were carrying out part of an on-going operation around a supermarket in response to persistent anti-social behaviour. During the operation a fifteen-year-old boy was restrained and handcuffed by a Bedfordshire Police officer and subsequently sustained a broken arm. This boy had been told to leave the area but had remained. Shortly before the boy was detained bottles were thrown at attending officers and an officer was assaulted.\nFollowing a complaint from the boy's father on 15 December 2017, Bedfordshire Police referred the incident to us on 13 February 2018 and we began an independent investigation.\nOur investigation scrutinised an allegation of coercion relating to an alleged conversation which took place while the officer was transporting the boy home. This accusation was dismissed by the Panel.\nFurthermore, the investigation examined evidence relating to an allegation that the officer activated his panic alarm in circumstances which did not require it.\nDuring the investigation, investigators interviewed one officer who was subject of the investigation, examined body worn video (BWV) and obtained statements from the complainant, doctors and several police witnesses. The investigation team also analysed the relevant legislation, national and local polices, briefing slides and operation information.\nOur investigation concluded in February 2019 and we referred the case to the Crown Prosecution Service (CPS) to determine whether the officer should be prosecuted for any criminal offences. In August 2019 the CPS decided there was insufficient evidence to pursue a criminal charge against the officer.\nOur investigation gathered evidence that indicated that the officer had a case to answer regarding his use of force in restraining the child, and subsequent accounts.\nWe made our recommendation to Bedfordshire Police on 17 April 2019. This was rejected on 26 June then, following receipt of an expert report into the victim's injuries, we directed the force on 12 August to hold a hearing, which took place in December 2019. After a full hearing the Panel determined that the officer had not committed misconduct or gross misconduct and none of the allegations were upheld.\n"],["'Custody and detention', 'Bedfordshire Police'","'Welfare and vulnerable people', 'Bedfordshire Police'","'Discrimination', 'Use of force and armed policing', 'Bedfordshire Police'","'Custody and detention', 'Use of force and armed policing', 'Bedfordshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-bedfordshire-police-june-2017'>https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-bedfordshire-police-june-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-bedfordshire-police-july-2017'>https://policeconduct.gov.uk/recommendations/response-missing-person%E2%80%99s-report-bedfordshire-police-july-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/stop-and-search-bedfordshire-police-october-2018'>https://policeconduct.gov.uk/recommendations/stop-and-search-bedfordshire-police-october-2018<\/a>","<a href='https://policeconduct.gov.uk/recommendations/use-force-fifteen-year-old-boy-bedfordshire-police-december-2017'>https://policeconduct.gov.uk/recommendations/use-force-fifteen-year-old-boy-bedfordshire-police-december-2017<\/a>"],["28-Sep-2018","11-Jul-2018","29-Jan-2020","2-Nov-2020"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-3bc5a74ec1fb9d4b92fa" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-05dabd6a6c07ebde9afa" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-3bc5a74ec1fb9d4b92fa">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4"],["Custody and detention","Use of force and armed policing","Discrimination","Welfare and vulnerable people"],[2,2,1,1],[0.5,0.5,0.25,0.25]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 4 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-05dabd6a6c07ebde9afa">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4"],["Custody and detention","Use of force and armed policing","Discrimination","Welfare and vulnerable people"],[2,2,1,1],[0.5,0.5,0.25,0.25]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 4 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

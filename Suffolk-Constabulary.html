@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Suffolk Constabulary
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Suffolk Constabulary there were <strong>1 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>3 officers</strong> and <strong>8 police staff</strong>.
+At Suffolk Constabulary there were <strong>7 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>6 officers</strong> and <strong>8 police staff</strong>.
 </p>
 <p>
 <strong>1</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>9 officers</strong> and <strong>9 staff</strong>.
+The misconduct was proven in the case of <strong>5 officers</strong> and <strong>2 staff</strong>.
 </p>
 <p>
-Out of the 3 officers and 8 staff identified as having a case to answer for misconduct, <strong>5 officers</strong> and <strong>5 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 6 officers and 8 staff identified as having a case to answer for misconduct, <strong>3 officers</strong> and <strong>9 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>2 officers</strong> and <strong>9 staff</strong> received management action.
+<strong>6 officers</strong> and <strong>5 staff</strong> received management action.
 </p>
 <p>
-<strong>6 officers</strong> and <strong>3 staff</strong> were given a written warning.
+<strong>6 officers</strong> and <strong>7 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>8 officers</strong> and <strong>1 staff</strong> were dismissed.
+<strong>5 officers</strong> and <strong>5 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-7f7ddcadd7c3947cec61" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-d9bee468522b744e82d9" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-7f7ddcadd7c3947cec61">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Inappropriate relationship with person encountered as part of policing role and duties - Suffolk Constabulary, March 2019","Response to concern for welfare reports - Suffolk Constabulary, December 2017"],["A serving police officer with Suffolk Constabulary was informed by a friend that they had begun an intimate sexual relationship with a police officer who they had met when they responded to a report of an incident of domestic abuse.\nOn 9 May 2019, the officer reported this matter to her supervisor and Suffolk Constabulary referred this case to the Independent Office for Police Conduct (IOPC) as a mandatory conduct matter.\nThe basis of this investigation was the allegation that a police officer began an intimate sexual relationship with a person whom they had met as part of their policing role, when they had attended the person's home in March 2019, responding to a report of domestic violence.\nDuring our investigation, we interviewed the officer in relation to allegations of Misconduct in Public Office and Abuse of Position for Sexual Purpose. We also examined mobile phones and obtained statements from several witnesses including police officers. Statements were also obtained from the vulnerable DV victim, and their mobile phone messages were downloaded.\nIn our opinion the police officer had a case to answer for gross misconduct and Suffolk Police agreed with our opinion. They arranged a misconduct hearing. The officer resigned and left the force on 30 March 2020 before the hearing which took place on 7 May 2020. At the hearing, gross misconduct was proven and the officer would have been dismissed if they had still been a serving officer. They were also placed on the Police Barred List.\nThroughout this investigation, we carefully considered whether there are any opportunities for learning or improvement. In this case, we did not identify any learning opportunities.\n","On 27 December 2017, a member of the public contacted Suffolk Constabulary to report concerns for the welfare of a man. The caller stated they could see the man sitting in the rear garden of an address in Lowestoft, wearing unsuitable clothing for the bad weather conditions.\nThe police call taker requested an ambulance. However, the ambulance service said they would not be sending a response due to other high demand. Police did not attend. \nThe next day, another member of the public contacted police to report their concerns for the same man, saying he was face-down in the garden, where he had been since the previous day. Police and paramedics attended and confirmed the man was dead.\nInvestigators obtained accounts from two call takers involved in handling the call relating to the man on 27 December. The first call taker was dealing with the call and the second call taker was listening and providing advice. The first call taker resigned in December 2017 and the second was served with a notice informing him his conduct was under investigation regarding the allegations that he may not have conducted the appropriate checks and risk assessments, and may not have gathered sufficient information to enable a decision to be reached regarding police and/or ambulance attendance.\nInvestigators reviewed a body of evidence including the calls to police and ambulance, police records of the calls, and relevant policies and procedures. Suffolk Constabulary's control room trainer was also consulted regarding his opinion on the handling of the call to police on 27 December.\nAt the end of the investigation we were of the opinion that a reasonable tribunal, properly directed could, on the balance of probabilities, consider that, although the evidence seems to suggest that the call was not handled perfectly, the actions of the second call taker would not amount to misconduct. No guidance was breached, and the second call taker accepted that things could have been handled better.\nAfter reviewing our report Suffolk Constabulary agreed.\n"],["'Corruption and abuse of power', 'Suffolk Constabulary'","'Death and serious injury', 'Welfare and vulnerable people', 'Suffolk Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/inappropriate-relationship-person-encountered-part-policing-role-and-duties-suffolk'>https://policeconduct.gov.uk/recommendations/inappropriate-relationship-person-encountered-part-policing-role-and-duties-suffolk<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-suffolk-constabulary-december-2017'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-suffolk-constabulary-december-2017<\/a>"],["18-Feb-2021","29-Jan-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-d9bee468522b744e82d9">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Inappropriate relationship with person encountered as part of policing role and duties - Suffolk Constabulary, March 2019","Response to concern for welfare reports - Suffolk Constabulary, December 2017"],["A serving police officer with Suffolk Constabulary was informed by a friend that they had begun an intimate sexual relationship with a police officer who they had met when they responded to a report of an incident of domestic abuse.\nOn 9 May 2019, the officer reported this matter to her supervisor and Suffolk Constabulary referred this case to the Independent Office for Police Conduct (IOPC) as a mandatory conduct matter.\nThe basis of this investigation was the allegation that a police officer began an intimate sexual relationship with a person whom they had met as part of their policing role, when they had attended the person's home in March 2019, responding to a report of domestic violence.\nDuring our investigation, we interviewed the officer in relation to allegations of Misconduct in Public Office and Abuse of Position for Sexual Purpose. We also examined mobile phones and obtained statements from several witnesses including police officers. Statements were also obtained from the vulnerable DV victim, and their mobile phone messages were downloaded.\nIn our opinion the police officer had a case to answer for gross misconduct and Suffolk Police agreed with our opinion. They arranged a misconduct hearing. The officer resigned and left the force on 30 March 2020 before the hearing which took place on 7 May 2020. At the hearing, gross misconduct was proven and the officer would have been dismissed if they had still been a serving officer. They were also placed on the Police Barred List.\nThroughout this investigation, we carefully considered whether there are any opportunities for learning or improvement. In this case, we did not identify any learning opportunities.\n","On 27 December 2017, a member of the public contacted Suffolk Constabulary to report concerns for the welfare of a man. The caller stated they could see the man sitting in the rear garden of an address in Lowestoft, wearing unsuitable clothing for the bad weather conditions.\nThe police call taker requested an ambulance. However, the ambulance service said they would not be sending a response due to other high demand. Police did not attend. \nThe next day, another member of the public contacted police to report their concerns for the same man, saying he was face-down in the garden, where he had been since the previous day. Police and paramedics attended and confirmed the man was dead.\nInvestigators obtained accounts from two call takers involved in handling the call relating to the man on 27 December. The first call taker was dealing with the call and the second call taker was listening and providing advice. The first call taker resigned in December 2017 and the second was served with a notice informing him his conduct was under investigation regarding the allegations that he may not have conducted the appropriate checks and risk assessments, and may not have gathered sufficient information to enable a decision to be reached regarding police and/or ambulance attendance.\nInvestigators reviewed a body of evidence including the calls to police and ambulance, police records of the calls, and relevant policies and procedures. Suffolk Constabulary's control room trainer was also consulted regarding his opinion on the handling of the call to police on 27 December.\nAt the end of the investigation we were of the opinion that a reasonable tribunal, properly directed could, on the balance of probabilities, consider that, although the evidence seems to suggest that the call was not handled perfectly, the actions of the second call taker would not amount to misconduct. No guidance was breached, and the second call taker accepted that things could have been handled better.\nAfter reviewing our report Suffolk Constabulary agreed.\n"],["'Corruption and abuse of power', 'Suffolk Constabulary'","'Death and serious injury', 'Welfare and vulnerable people', 'Suffolk Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/inappropriate-relationship-person-encountered-part-policing-role-and-duties-suffolk'>https://policeconduct.gov.uk/recommendations/inappropriate-relationship-person-encountered-part-policing-role-and-duties-suffolk<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-suffolk-constabulary-december-2017'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-suffolk-constabulary-december-2017<\/a>"],["18-Feb-2021","29-Jan-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-5cc694a8b031c85c65b7" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-60fc654c6e409ba9ff93" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-5cc694a8b031c85c65b7">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3"],["Corruption and abuse of power","Death and serious injury","Welfare and vulnerable people"],[1,1,1],[0.5,0.5,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-60fc654c6e409ba9ff93">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3"],["Corruption and abuse of power","Death and serious injury","Welfare and vulnerable people"],[1,1,1],[0.5,0.5,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Cambridgeshire Constabulary
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Cambridgeshire Constabulary there were <strong>6 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>8 officers</strong> and <strong>7 police staff</strong>.
+At Cambridgeshire Constabulary there were <strong>2 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>0 officers</strong> and <strong>9 police staff</strong>.
 </p>
 <p>
 <strong>2</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>3 officers</strong> and <strong>10 staff</strong>.
+The misconduct was proven in the case of <strong>1 officers</strong> and <strong>6 staff</strong>.
 </p>
 <p>
-Out of the 8 officers and 7 staff identified as having a case to answer for misconduct, <strong>2 officers</strong> and <strong>4 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 0 officers and 9 staff identified as having a case to answer for misconduct, <strong>1 officers</strong> and <strong>5 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>4 officers</strong> and <strong>1 staff</strong> received management action.
+<strong>5 officers</strong> and <strong>8 staff</strong> received management action.
 </p>
 <p>
-<strong>9 officers</strong> and <strong>2 staff</strong> were given a written warning.
+<strong>1 officers</strong> and <strong>4 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>8 officers</strong> and <strong>5 staff</strong> were dismissed.
+<strong>4 officers</strong> and <strong>7 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-5e10af844d83273b7080" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-00dd87005f7c11adc9d2" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-5e10af844d83273b7080">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5"],["Complaint regarding excessive use of force - Cambridgeshire Constabulary, January 2019","Conduct of an officer involved in vehicle and pedestrian collisions - Cambridgeshire Constabulary, August 2017","Police investigation into serious sexual offences ‚Äö√Ñ√¨ Cambridgeshire Constabulary,  July 2019","Use of Taser by an officer - Cambridgeshire Constabulary, October 2016‚Äö√Ñ√¨March 2017","Woman found dead after being reported missing - Cambridgeshire Constabulary, April 2018"],["On 24 January 2019, officers from Cambridgeshire Constabulary attended a residential home in Wisbech, Cambridgeshire, catering for 12- to 18-year-olds with ongoing mental health needs and challenging behaviours, in order to deal with a disturbance concerning a number of the residents.\nOne of the residential care workers subsequently made a complaint regarding the force used during the arrest and restraint of one of the residents, a young woman, and the behaviour of the arresting officer. The care worker alleged that, in the process of using excessive force on the young woman, the officer also caused her injuries, which included a bruise to her forearm and marks to her wrist.\nDuring the course of the investigation, investigators interviewed the arresting officer and their colleague, obtained a number of statements from independent witnesses, and reviewed the officers' body-worn video footage as well as CCTV from the venue of the incident.\nWe served the officer with a notice of investigation stating that, based on the evidence, there was an indication that they may have used force which may not have been necessary, proportionate or reasonable, and that they may have acted without self-control, tolerance, respect and courtesy.\nThe evidence suggested that the officer has been informed that the young woman may have been in possession of weapons such as glass shards and razor blades. The officer approached her with the intention to restrain her for her own good. It appears that the officer was then immediately assaulted and in great pain. We were of the opinion that a reasonable tribunal, properly directed, could conclude that the officer's actions were appropriate at that moment in time. The officer then took the young woman to the ground using an approved technique and in line with legislation. We therefore considered that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct for use of force.\nThe evidence also appeared to show that the officer used language that could be perceived as inappropriate when dealing with a vulnerable young woman. Taking into account the circumstances, and the acknowledgement of their behaviour, we were of the opinion that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct for the lack of courtesy shown, but recommended that the officer's conduct should be addressed by management action. We completed our investigation in August 2019.\nAfter reviewing our report, Cambridgeshire Constabulary agreed to address this issue through management action linked to a developmental objective and action plan, and as learning for the officer in relation to the unprofessional use of language and threats made to the young woman.\n","A Cambridgeshire Constabulary police officer was involved in a brief pursuit of a vehicle around 8.15pm on 29 August 2017 on Morley Way in Peterborough.\nDuring the pursuit, the police vehicle struck the vehicle it was pursuing. Following this the occupants of the vehicle got out and began to run away.\nThe officer driving the police vehicle then struck a young man with the police vehicle twice. The young man sustained head injuries and a dislocated shoulder as a result.\nDuring our investigation, our investigators examined the dash-camera footage from the police vehicle, the radio transmissions made by officers and the vehicle data. We interviewed the driver of the police vehicle under misconduct and criminal caution, but they declined to comment.\nBased on the evidence available, we were of the opinion that there was sufficient evidence that a reasonable tribunal, properly directed, could find that the driver of the police vehicle had a case to answer for gross misconduct.\nWe completed our investigation in December 2017.\nWe also passed on a file of evidence to the Crown Prosecution Service to consider a number of possible criminal charges. The police driver was acquitted of the charge of dangerous driving following a trial in spring 2019.\nAfter reviewing our report Cambridgeshire Constabulary agreed with our determinations. At a gross misconduct hearing, held in autumn 2019, an independent panel found gross misconduct proven for the police driver. The officer had resigned from the force, but the panel found that they would have received a final written warning, had they still been serving.\n","In July 2019 Cambridgeshire Constabulary voluntarily referred an allegation to the IOPC that an investigation conducted by a detective in their Paedophile Online Investigation Team (POLIT) had not been appropriately progressed before he transferred to another force in April 2019. The POLIT investigation had begun in March 2016 and had not been completed by the detective when he left the force.\nDuring our investigation, it was established that a second investigation carried out by the detective from January 2016 to April 2019 may also not have been appropriately progressed. \nOur investigation looked at the progression of the investigations by the detective, and the supervision received from their sergeant and two inspectors. We interviewed all four officers and witnesses. It became apparent that the detective had been performing poorly and had taken some time off work. The detective was supported by their sergeant and Occupational Health Unit. The detective's performance did not improve once back at work and assessed as fit to work. This was not addressed by the sergeant, who considered an action plan for the detective but did not implement one. \nWe completed our investigation in July 2020. We concluded that the detective and sergeant had a case to answer for misconduct. This was in relation to the detective's lack of progression of both investigations, and the sergeant's management of the detective's poor performance. We recommended that the inspectors had no case to answer for misconduct. \nCambridgeshire Constabulary reviewed our report and agreed with our conclusions for the detective and sergeant. They disagreed with our conclusions in relation to the inspectors and suggested that both had a case to answer for misconduct. We agreed with their determinations and all four officers received management action. \nWe carefully considered whether there were any learning opportunities arising from the investigation. We make learning recommendations to improve policing and public confidence in the police complaints system and to prevent a recurrence of similar incidents. We recommended some learning around training practices for new recruits and what steps can be taken to alleviate delays on forensic downloads. We further identified three areas of learning and progressed these under Paragraph 28A of the Police Reform Act 2002\n","This investigation concerned the multiple use of Taser by an officer from Cambridgeshire Constabulary between October 2016 and March 2017. Cambridgeshire Constabulary voluntarily referred this to us as a conduct matter.\nInvestigators examined documentation and body-worn video footage relating to a number of incidents where the officer discharged his Taser. They interviewed the officer in depth regarding two of these incidents: a domestic incident and a use of Taser during an arrest.\nOn the basis of the evidence available, the Lead Investigator found no indication that the officer had committed a criminal offence or behaved in a manner that would justify the bringing of disciplinary proceedings. However, they were of the opinion that there may have been performance issues with the officer for the force to consider.\nAfter reviewing our report, the force was of the opinion that the officer had a case to answer for misconduct in relation to the domestic incident. They proposed to deal with this outside of the formal disciplinary process with learning and training for the officer.\n","In April 2018 a man called Cambridgeshire Constabulary to report that his wife was missing. He hadn't seen her for two hours after they had had an argument. He also mentioned that she had a number of vulnerabilities, including a history of depression, and had attempted to take her own life some years ago.\nThe call handler and supervisor dealing with this call treated this as a domestic incident, and not as a missing person. This affected the information they gathered from the husband and the way the incident was dealt with.\nLater that evening the incident was reviewed and reclassified as a missing person. Officers went to the man's home and spoke to him about the circumstances surrounding his wife leaving. Officers searched the house, as well as the local area and parks. They also took a number of actions, including calling local hotels. After being told that a guest of that name was staying there, officers went to a hotel, where they found the woman in one of the rooms. She had taken her own life.\nDuring our investigation, investigators interviewed the call handler and supervisor under misconduct notice. They also obtained written responses from the attending officers and their sergeant, and reviewed other evidence, including body-worn video, call recordings, the incident report, and relevant policies.\nWe found some discrepancies in how the call handler and their supervisor recalled the events and their conversation about how the call should be considered.\nBased on the evidence available, we were of the opinion that the call handler and supervisor should have treated the call from the woman's husband as a high-risk missing person report from the outset. Treating the call as a domestic incident appears to have impacted on the subsequent police response, with some initial focus on investigating a domestic violence matter, rather than progressing a missing person enquiry. We recommended that this should be addressed as performance issues with both members of staff. We concluded our investigation in October 2018.\nAfter reviewing our report, Cambridgeshire Constabulary agreed that both members of staff would receive management action, linked to learning objectives. The force also advised that force control room staff would receive a refresher on procedures and policies for both domestic incidents and missing persons.\n"],["'Use of force and armed policing', 'Welfare and vulnerable people', 'Cambridgeshire Constabulary'","'Death and serious injury', 'Road traffic incidents', 'Cambridgeshire Constabulary'","'Child sexual abuse', 'Cambridgeshire Constabulary'","'Use of force and armed policing', 'Cambridgeshire Constabulary'","'Death and serious injury', 'Welfare and vulnerable people', 'Cambridgeshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/complaint-regarding-excessive-use-force-cambridgeshire-constabulary-january-2019'>https://policeconduct.gov.uk/recommendations/complaint-regarding-excessive-use-force-cambridgeshire-constabulary-january-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/conduct-officer-involved-vehicle-and-pedestrian-collisions-cambridgeshire'>https://policeconduct.gov.uk/recommendations/conduct-officer-involved-vehicle-and-pedestrian-collisions-cambridgeshire<\/a>","<a href='https://policeconduct.gov.uk/recommendations/police-investigation-serious-sexual-offences-%E2%80%93-cambridgeshire-constabulary-july-2019'>https://policeconduct.gov.uk/recommendations/police-investigation-serious-sexual-offences-%E2%80%93-cambridgeshire-constabulary-july-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/use-taser-officer-cambridgeshire-constabulary-october-2016%E2%80%93march-2017'>https://policeconduct.gov.uk/recommendations/use-taser-officer-cambridgeshire-constabulary-october-2016%E2%80%93march-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/woman-found-dead-after-being-reported-missing-cambridgeshire-constabulary-april-2018'>https://policeconduct.gov.uk/recommendations/woman-found-dead-after-being-reported-missing-cambridgeshire-constabulary-april-2018<\/a>"],["5-Nov-2019","21-Jan-2020","2-Mar-2021","9-Mar-2018","18-Jun-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-00dd87005f7c11adc9d2">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5"],["Complaint regarding excessive use of force - Cambridgeshire Constabulary, January 2019","Conduct of an officer involved in vehicle and pedestrian collisions - Cambridgeshire Constabulary, August 2017","Police investigation into serious sexual offences ‚Äö√Ñ√¨ Cambridgeshire Constabulary,  July 2019","Use of Taser by an officer - Cambridgeshire Constabulary, October 2016‚Äö√Ñ√¨March 2017","Woman found dead after being reported missing - Cambridgeshire Constabulary, April 2018"],["On 24 January 2019, officers from Cambridgeshire Constabulary attended a residential home in Wisbech, Cambridgeshire, catering for 12- to 18-year-olds with ongoing mental health needs and challenging behaviours, in order to deal with a disturbance concerning a number of the residents.\nOne of the residential care workers subsequently made a complaint regarding the force used during the arrest and restraint of one of the residents, a young woman, and the behaviour of the arresting officer. The care worker alleged that, in the process of using excessive force on the young woman, the officer also caused her injuries, which included a bruise to her forearm and marks to her wrist.\nDuring the course of the investigation, investigators interviewed the arresting officer and their colleague, obtained a number of statements from independent witnesses, and reviewed the officers' body-worn video footage as well as CCTV from the venue of the incident.\nWe served the officer with a notice of investigation stating that, based on the evidence, there was an indication that they may have used force which may not have been necessary, proportionate or reasonable, and that they may have acted without self-control, tolerance, respect and courtesy.\nThe evidence suggested that the officer has been informed that the young woman may have been in possession of weapons such as glass shards and razor blades. The officer approached her with the intention to restrain her for her own good. It appears that the officer was then immediately assaulted and in great pain. We were of the opinion that a reasonable tribunal, properly directed, could conclude that the officer's actions were appropriate at that moment in time. The officer then took the young woman to the ground using an approved technique and in line with legislation. We therefore considered that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct for use of force.\nThe evidence also appeared to show that the officer used language that could be perceived as inappropriate when dealing with a vulnerable young woman. Taking into account the circumstances, and the acknowledgement of their behaviour, we were of the opinion that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct for the lack of courtesy shown, but recommended that the officer's conduct should be addressed by management action. We completed our investigation in August 2019.\nAfter reviewing our report, Cambridgeshire Constabulary agreed to address this issue through management action linked to a developmental objective and action plan, and as learning for the officer in relation to the unprofessional use of language and threats made to the young woman.\n","A Cambridgeshire Constabulary police officer was involved in a brief pursuit of a vehicle around 8.15pm on 29 August 2017 on Morley Way in Peterborough.\nDuring the pursuit, the police vehicle struck the vehicle it was pursuing. Following this the occupants of the vehicle got out and began to run away.\nThe officer driving the police vehicle then struck a young man with the police vehicle twice. The young man sustained head injuries and a dislocated shoulder as a result.\nDuring our investigation, our investigators examined the dash-camera footage from the police vehicle, the radio transmissions made by officers and the vehicle data. We interviewed the driver of the police vehicle under misconduct and criminal caution, but they declined to comment.\nBased on the evidence available, we were of the opinion that there was sufficient evidence that a reasonable tribunal, properly directed, could find that the driver of the police vehicle had a case to answer for gross misconduct.\nWe completed our investigation in December 2017.\nWe also passed on a file of evidence to the Crown Prosecution Service to consider a number of possible criminal charges. The police driver was acquitted of the charge of dangerous driving following a trial in spring 2019.\nAfter reviewing our report Cambridgeshire Constabulary agreed with our determinations. At a gross misconduct hearing, held in autumn 2019, an independent panel found gross misconduct proven for the police driver. The officer had resigned from the force, but the panel found that they would have received a final written warning, had they still been serving.\n","In July 2019 Cambridgeshire Constabulary voluntarily referred an allegation to the IOPC that an investigation conducted by a detective in their Paedophile Online Investigation Team (POLIT) had not been appropriately progressed before he transferred to another force in April 2019. The POLIT investigation had begun in March 2016 and had not been completed by the detective when he left the force.\nDuring our investigation, it was established that a second investigation carried out by the detective from January 2016 to April 2019 may also not have been appropriately progressed. \nOur investigation looked at the progression of the investigations by the detective, and the supervision received from their sergeant and two inspectors. We interviewed all four officers and witnesses. It became apparent that the detective had been performing poorly and had taken some time off work. The detective was supported by their sergeant and Occupational Health Unit. The detective's performance did not improve once back at work and assessed as fit to work. This was not addressed by the sergeant, who considered an action plan for the detective but did not implement one. \nWe completed our investigation in July 2020. We concluded that the detective and sergeant had a case to answer for misconduct. This was in relation to the detective's lack of progression of both investigations, and the sergeant's management of the detective's poor performance. We recommended that the inspectors had no case to answer for misconduct. \nCambridgeshire Constabulary reviewed our report and agreed with our conclusions for the detective and sergeant. They disagreed with our conclusions in relation to the inspectors and suggested that both had a case to answer for misconduct. We agreed with their determinations and all four officers received management action. \nWe carefully considered whether there were any learning opportunities arising from the investigation. We make learning recommendations to improve policing and public confidence in the police complaints system and to prevent a recurrence of similar incidents. We recommended some learning around training practices for new recruits and what steps can be taken to alleviate delays on forensic downloads. We further identified three areas of learning and progressed these under Paragraph 28A of the Police Reform Act 2002\n","This investigation concerned the multiple use of Taser by an officer from Cambridgeshire Constabulary between October 2016 and March 2017. Cambridgeshire Constabulary voluntarily referred this to us as a conduct matter.\nInvestigators examined documentation and body-worn video footage relating to a number of incidents where the officer discharged his Taser. They interviewed the officer in depth regarding two of these incidents: a domestic incident and a use of Taser during an arrest.\nOn the basis of the evidence available, the Lead Investigator found no indication that the officer had committed a criminal offence or behaved in a manner that would justify the bringing of disciplinary proceedings. However, they were of the opinion that there may have been performance issues with the officer for the force to consider.\nAfter reviewing our report, the force was of the opinion that the officer had a case to answer for misconduct in relation to the domestic incident. They proposed to deal with this outside of the formal disciplinary process with learning and training for the officer.\n","In April 2018 a man called Cambridgeshire Constabulary to report that his wife was missing. He hadn't seen her for two hours after they had had an argument. He also mentioned that she had a number of vulnerabilities, including a history of depression, and had attempted to take her own life some years ago.\nThe call handler and supervisor dealing with this call treated this as a domestic incident, and not as a missing person. This affected the information they gathered from the husband and the way the incident was dealt with.\nLater that evening the incident was reviewed and reclassified as a missing person. Officers went to the man's home and spoke to him about the circumstances surrounding his wife leaving. Officers searched the house, as well as the local area and parks. They also took a number of actions, including calling local hotels. After being told that a guest of that name was staying there, officers went to a hotel, where they found the woman in one of the rooms. She had taken her own life.\nDuring our investigation, investigators interviewed the call handler and supervisor under misconduct notice. They also obtained written responses from the attending officers and their sergeant, and reviewed other evidence, including body-worn video, call recordings, the incident report, and relevant policies.\nWe found some discrepancies in how the call handler and their supervisor recalled the events and their conversation about how the call should be considered.\nBased on the evidence available, we were of the opinion that the call handler and supervisor should have treated the call from the woman's husband as a high-risk missing person report from the outset. Treating the call as a domestic incident appears to have impacted on the subsequent police response, with some initial focus on investigating a domestic violence matter, rather than progressing a missing person enquiry. We recommended that this should be addressed as performance issues with both members of staff. We concluded our investigation in October 2018.\nAfter reviewing our report, Cambridgeshire Constabulary agreed that both members of staff would receive management action, linked to learning objectives. The force also advised that force control room staff would receive a refresher on procedures and policies for both domestic incidents and missing persons.\n"],["'Use of force and armed policing', 'Welfare and vulnerable people', 'Cambridgeshire Constabulary'","'Death and serious injury', 'Road traffic incidents', 'Cambridgeshire Constabulary'","'Child sexual abuse', 'Cambridgeshire Constabulary'","'Use of force and armed policing', 'Cambridgeshire Constabulary'","'Death and serious injury', 'Welfare and vulnerable people', 'Cambridgeshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/complaint-regarding-excessive-use-force-cambridgeshire-constabulary-january-2019'>https://policeconduct.gov.uk/recommendations/complaint-regarding-excessive-use-force-cambridgeshire-constabulary-january-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/conduct-officer-involved-vehicle-and-pedestrian-collisions-cambridgeshire'>https://policeconduct.gov.uk/recommendations/conduct-officer-involved-vehicle-and-pedestrian-collisions-cambridgeshire<\/a>","<a href='https://policeconduct.gov.uk/recommendations/police-investigation-serious-sexual-offences-%E2%80%93-cambridgeshire-constabulary-july-2019'>https://policeconduct.gov.uk/recommendations/police-investigation-serious-sexual-offences-%E2%80%93-cambridgeshire-constabulary-july-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/use-taser-officer-cambridgeshire-constabulary-october-2016%E2%80%93march-2017'>https://policeconduct.gov.uk/recommendations/use-taser-officer-cambridgeshire-constabulary-october-2016%E2%80%93march-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/woman-found-dead-after-being-reported-missing-cambridgeshire-constabulary-april-2018'>https://policeconduct.gov.uk/recommendations/woman-found-dead-after-being-reported-missing-cambridgeshire-constabulary-april-2018<\/a>"],["5-Nov-2019","21-Jan-2020","2-Mar-2021","9-Mar-2018","18-Jun-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-f8924a9ef0b280f7700b" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-73e7a9d4adc6df60d0bc" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-f8924a9ef0b280f7700b">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Death and serious injury","Use of force and armed policing","Welfare and vulnerable people","Child sexual abuse","Road traffic incidents"],[2,2,2,1,1],[0.4,0.4,0.4,0.2,0.2]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 5 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-73e7a9d4adc6df60d0bc">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Death and serious injury","Use of force and armed policing","Welfare and vulnerable people","Child sexual abuse","Road traffic incidents"],[2,2,2,1,1],[0.4,0.4,0.4,0.2,0.2]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 5 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

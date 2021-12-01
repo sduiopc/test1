@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Cleveland Police
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Cleveland Police there were <strong>10 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>4 officers</strong> and <strong>3 police staff</strong>.
+At Cleveland Police there were <strong>8 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>3 officers</strong> and <strong>0 police staff</strong>.
 </p>
 <p>
 <strong>3</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>6 officers</strong> and <strong>7 staff</strong>.
+The misconduct was proven in the case of <strong>4 officers</strong> and <strong>4 staff</strong>.
 </p>
 <p>
-Out of the 4 officers and 3 staff identified as having a case to answer for misconduct, <strong>8 officers</strong> and <strong>2 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 3 officers and 0 staff identified as having a case to answer for misconduct, <strong>8 officers</strong> and <strong>5 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>1 officers</strong> and <strong>1 staff</strong> received management action.
+<strong>1 officers</strong> and <strong>4 staff</strong> received management action.
 </p>
 <p>
-<strong>6 officers</strong> and <strong>9 staff</strong> were given a written warning.
+<strong>5 officers</strong> and <strong>6 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>2 officers</strong> and <strong>9 staff</strong> were dismissed.
+<strong>1 officers</strong> and <strong>6 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-d890fa80687eb492ec6f" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-f872552da1b8bf48b3a7" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-d890fa80687eb492ec6f">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6"],["Allegations made by a former officer (Operation Talon) - Cleveland Police, December 2017","Complaint regarding inappropriate contact from a PCSO - Cleveland Police, May 2019","Man dies following contact with police - Cleveland Police, August 2017","Man sustained a serious injury while in custody ‚Äö√Ñ√¨ Cleveland Police, August 2019","Response to 999 calls - Cleveland Police, November 2015","Woman dies following attack by police dog - Cleveland Police, July 2014"],["This investigation arose as a result of complaints made by a former Cleveland police officer. There are two separate strands to the complaints made:\nThe first of these arise from an allegation that the former officer was subjected to bullying and racism whilst posted to the Criminal Investigations Department (CID). The former officer reported these matters to senior officers within Cleveland Police in April 2011. In July of 2011, the Cleveland Black Police Association (CBPA) submitted a report to a senior officer within Cleveland Police, highlighting their concerns over potential institutional racism within the force. The report from the CBPA prompted Cleveland Police to commence a process known as the 'Equality Review' which ran between 2011 and 2012. This was a fact-finding enquiry which the former officer engaged with and the intention was for it to be a response to the concerns raised by Black, Asian and Minority Ethnic (BAME) officers and staff. \nThe former officer subsequently alleged that the scope of the Equality Review was deliberately changed to hide discrimination within the force and that Cleveland Police's then Chief Constable misrepresented the review's findings to the media by failing to disclose information given to the review by BAME officers and claiming there was no institutional racism within Cleveland Police.\nThe second strand of the former officer's complaints were made to the IOPC in 2014 when it was alleged that, following the complaints of bullying and racism, there was a campaign orchestrated by senior officers within Cleveland Police to undermine and 'destroy' the former officer.\nThe former officer later claimed that Cleveland Police failed to make sufficient efforts to identify a witness who was able to provide evidence to support the claim that there was an organised conspiracy to 'destroy' the former officer. It was suggested that this witness could provide evidence of organisational criminality and corruption by the force but this information was supressed by Cleveland Police.  \nThe former officer made complaints to Cleveland Police between April and June 2014. They were recorded by the force and voluntarily referred to the IOPC on 26 June 2014. The IOPC passed the referral back to Cleveland Police so that they could be investigated locally. Due to the sensitivities around the allegations and the high potential for a conflict of interests, Cleveland Police asked the Metropolitan Police Service (MPS) to conduct the investigation on their behalf. The MPS carried out an investigation (under the operational name of Op Talon), into all the allegations made by the former officer. The MPS investigation commenced in July 2014 and was concluded on 24 June 2016, when they reported they had found no evidence to support the allegations.\nOn 6 September 2016, the former officer appealed to the IOPC against the findings of the Op Talon investigation. The appeal was partially upheld and the IOPC decided that further additional investigation should be conducted to explore specific areas of the complaints. An IOPC independent investigation began in December 2017.\nDuring the IOPC investigation, witnesses, who the former officer suggested may be able to assist the investigation, were interviewed and statements obtained. Material gathered by the MPS (Op Talon) investigation has also been examined and considered. The former officer also indicated that evidence presented to named employment tribunals and a Home Affairs Select Committee (HASC) hearing would be relevant to the complaints. This material has also been examined by the IOPC.\nThe IOPC independent investigation was completed in July 2020. The investigation found that none of the witnesses who were spoken to were able to provide evidence in support of the former officer's specific complaints. The material gathered by the MPS (Op Talon) was examined and found to be consistent with the findings of that investigation. Material presented to the employment tribunals and the HASC hearing were examined but found not to be evidentially relevant to the complaints.\nThe IOPC has not upheld the complaints made by the former officer and found no evidence to indicate misconduct or criminality on the part of any of the Cleveland police officers or members of police staff named in the complaints.\n \n","In May 2019, a Police and Community Safety Officer (PCSO) from Cleveland Police visited two people following a report of a dispute between the two neighbours. After an additional report was made, the PCSO and a colleague made a further visit and advised both parties.\nLater the same day, the PCSO emailed one of the parties from their personal email account while off duty. The recipient felt that the email was inappropriate and may have been an attempt to instigate a personal relationship with them and made a complaint to Cleveland Police. Cleveland Police referred the matter to us as a complaint and we decided to undertake an independent investigation.\nOur investigators interviewed the PCSO and obtained statements from several witnesses, including the complainant and the PCSO's colleagues. We reviewed all email contact between the complainant and the PCSO. We also obtained and reviewed local and national policies and procedures, and relevant documentation from Cleveland Police.\nBased on the evidence available we were of the opinion that the PCSO may have a case to answer for misconduct. We completed our investigation on 27 January 2020.\nAfter reviewing our report Cleveland Police agreed. The PCSO attended a misconduct meeting in summer 2020 and was given a written warning\n","At 10.24am on 15 August 2017, a man approached a Cleveland Police officer in a distressed state, asking to be arrested. The officer was concerned about the man and took him to a mental health hospital for a mental health assessment, as a voluntary attendee. They arrived at hospital at approximately 11.30am; the officer stayed with the man for 30 minutes and then left the hospital at approximately 12pm.\nAt 12.06pm a member of the hospital staff called Cleveland Police to advise the man had left the hospital before being assessed. Control room personnel passed this information to the officer at 12.11pm and the log was closed. No further investigation took place to locate the man\nOn 16 August 2017 at 7.03am, a member of the public found the man's body. He was pronounced dead at 10.34am.\nDuring the investigation, our investigators interviewed one police officer and three contractors working in the control room for alleged misconduct, and took witness statements from hospital staff. They also obtained audio recordings of calls regarding the man, and documentary evidence from hospital and police systems.\nAt the end of the investigation, based on the evidence available, we were of the view that the police officer had acted appropriately in their dealings with the man. The officer believed that they were simply being notified by the control room that the man had left hospital because of their earlier contact with them, and that any further action should have been directed by the control room. We considered this to be reasonable in the circumstances and were therefore of the opinion that the officer did not have a case to answer for misconduct or any performance issues to address.\nWe were also of the opinion that the performance of two contractors working in the control room could be considered unsatisfactory for the following reasons: failing to conduct a risk assessment; failing to consider the man as a missing person; and failing to ensure that appropriate safeguarding enquiries were carried out after the man had left hospital without being assessed. We found no performance issues for a third contractor working in the control room.\nAfter reviewing our report, Cleveland Police agreed that the performance of both control room contractors would be dealt with as unsatisfactory performance, to include a meeting with their line managers. The force will also deal with the matter as organisational learning.\n","On 21 August 2019, Cleveland Police officers arrested a man and took him to hospital where he received treatment for an injury to his arm and a mental health assessment. The man was taken from hospital to a custody suite where he was detained. During his detention, the man self-harmed and opened the wound on his arm using his teeth and a small piece of metal. He also suffered from chest pains while in custody and was taken back to hospital by ambulance.\nFollowing a Death or Serious injury referral by Cleveland Police, we determined that the incident should be subject to a local investigation. After reviewing the local investigation report, we identified potential conduct and therefore invited Cleveland Police to make a conduct referral. \nOn 19 June 2020, we declared an independent investigation. During our investigation we obtained CCTV footage from the custody suite and the man's custody record. Based on this evidence, we identified potential conduct for a custody officer in relation to the appropriateness of the risk assessment and care plan. We also identified potential conduct for a detention officer in relation to their response to the man self-harming in his cell. We obtained witness statements from detention officers and police officers involved in the man's detention. We then interviewed both subject officers under misconduct caution and reviewed their responses against local and national policies and procedures. \nWe completed our investigation in January 2021. We were of the opinion, both subject officers had no case to answer and there were no further proceedings. We shared our report with Cleveland Police who agreed with our conclusions. Weadvised that the detention officer would benefit from additional training to ensure fullawareness of responsibilities and duty of care. We also suggested a form of management action for the custody officer. They agreed that the detention officer would benefit from management action but failures involving the custody officer wereorganisational and steps were taken in a timely manner to safeguard the man.\nWe carefully considered whether there were any learning opportunities arising from the investigation. We make learning recommendations to improve policing and public confidence in the police complaints system and to prevent a recurrence of similar incidents. We identified three areas of learning and have progressed these under Paragraph 28A of the Police Reform Act 2002.\n","On 3 November 2015, Cleveland Police received a 999 emergency telephone call from a resident of a hotel in Middlesbrough, reporting they had been threatened by another resident, who was in possession of a knife.\nThe caller explained to police staff that they had locked themselves in a room. Because of this, police staff assessed that the caller was not under any immediate threat. This assessment led to the decision that the incident did not require an emergency response from police.\nThe next day, Cleveland Police received a further telephone call from the same resident, reporting they had been threatened again by the same person.\nPolice officers arrived at the hotel to arrest the man alleged to have threated the resident, who had barricaded themselves in his room. He threatened to stab any police officer who entered the room and then proceeded to climb out of a window onto a first floor roof.\nPolice officers called further emergency services and negotiators to the scene. The man could not be persuaded to leave the roof and return to his room. He climbed further up onto the main roof of the building.\nThe manager of the hotel arrived at the scene, erected a ladder to the side of the building and shouted to the man to come down from the roof.\nThe man then slid down the roof tiles in a seated position and subsequently fell approximately ten feet. He sustained a serious injury to his hip as a result of the fall.\nDuring the course of the investigation the Investigator reviewed recordings of the 999 calls and body-worn camera footage; conducted house-to-house enquiries to neighbouring properties; and obtained witness statements from the officers who attended the scene. The officer and staff also provided accounts.\nAt the conclusion of the investigation, the Investigator was of the opinion that the call handler and supervisor may have a case to answer for misconduct in respect of the risk assessments they completed in response to the initial call.\nAfter reviewing our report, Cleveland Police disagreed that the call handler had a case to answer, as they had dealt with the incident in line with the training they had received. They also disagreed that there was a case to answer for the supervisor, or that their performance had been unsatisfactory, having considered the policy which applies to prioritising events as well as a relevant point of legislation. They therefore proposed to take no further action.\nHaving considered their response, we agreed that this was appropriate.\n","At around 8.30pm on 16 July 2014 Cleveland Police stopped a car in Middlesbrough that contained three men and a substantial quantity of heroin and cash. One of the men escaped by running off into neighbouring gardens.\nThe police received information that the man might have been seen near the rear garden of a house. Police officers spoke with the woman who lived in the house and obtained her consent to search the rear garden.\nA Cleveland Police dog handler searched her garden with his police dog, who was unleashed throughout the search. Sometime later, unbeknown to the dog handler, the police dog entered the house through the back door and attacked the woman, causing serious injuries to her arm and leg. She was given first aid and transported to hospital, where she died four days later. The pathologist who carried out the post-mortem examination was of the opinion there was a causal link between her death and the injuries she sustained in the attack.\nDuring the investigation the Lead Investigator found an indication that the dog handler may have behaved in a manner which would justify the instigation of disciplinary and criminal proceedings. We interviewed him under criminal caution.\nInvestigators also obtained and reviewed statements from the woman's family, officers involved in the incident, as well as paramedics and medical staff who looked after the woman. They also examined images captured by a National Police Air Service helicopter deployed to assist in the search for the man, and compared them with corresponding police radio transmissions. Investigators reviewed relevant national and local policies and guidance.\nBased on the evidence available, the Lead Investigator was of the opinion that there was sufficient evidence to indicate that the dog handler had failed to undertake an appropriate risk assessment prior to releasing his police dog, and failed to control him once released.\nWe sent our final report to Cleveland Police for review in May 2015 and also referred the incident to the Crown Prosecution Service (CPS), as we found indications of criminality.\nCleveland Police asked to wait until the CPS had made a decision on criminality before making their determinations relating to misconduct.\nIn January 2016 the CPS informed us that it had decided not to bring any criminal proceedings against any of the persons involved in the incident.\nThe force then agreed to hold a misconduct meeting for the dog handler. The proceedings were postponed at the request of the conducting officer for the misconduct meeting.\nAt the meeting, held in November 2017, the allegations of misconduct were proven for the officer and he received a written warning.\nAn inquest into the woman's death was held in September 2018. The jury concluded that she had died from natural causes contributed to by the consequences of the dog bite while the dog was out of control.\n"],["'Discrimination', 'Cleveland Police'","'Corruption and abuse of power', 'Cleveland Police'","'Death and serious injury', 'Welfare and vulnerable people', 'Cleveland Police'","'Custody and detention', 'Cleveland Police'","'Death and serious injury', 'Cleveland Police'","'Death and serious injury', 'Cleveland Police'"],["<a href='https://policeconduct.gov.uk/recommendations/allegations-made-former-officer-operation-talon-cleveland-police-december-2017'>https://policeconduct.gov.uk/recommendations/allegations-made-former-officer-operation-talon-cleveland-police-december-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/complaint-regarding-inappropriate-contact-pcso-cleveland-police-may-2019'>https://policeconduct.gov.uk/recommendations/complaint-regarding-inappropriate-contact-pcso-cleveland-police-may-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-dies-following-contact-police-cleveland-police-august-2017'>https://policeconduct.gov.uk/recommendations/man-dies-following-contact-police-cleveland-police-august-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-sustained-serious-injury-while-custody-%E2%80%93-cleveland-police-august-2019'>https://policeconduct.gov.uk/recommendations/man-sustained-serious-injury-while-custody-%E2%80%93-cleveland-police-august-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-999-calls-cleveland-police-november-2015'>https://policeconduct.gov.uk/recommendations/response-999-calls-cleveland-police-november-2015<\/a>","<a href='https://policeconduct.gov.uk/recommendations/woman-dies-following-attack-police-dog-cleveland-police-july-2014'>https://policeconduct.gov.uk/recommendations/woman-dies-following-attack-police-dog-cleveland-police-july-2014<\/a>"],["17-Nov-2020","5-Oct-2020","29-Jan-2019","28-May-2021","8-Feb-2018","3-Oct-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-f872552da1b8bf48b3a7">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6"],["Allegations made by a former officer (Operation Talon) - Cleveland Police, December 2017","Complaint regarding inappropriate contact from a PCSO - Cleveland Police, May 2019","Man dies following contact with police - Cleveland Police, August 2017","Man sustained a serious injury while in custody ‚Äö√Ñ√¨ Cleveland Police, August 2019","Response to 999 calls - Cleveland Police, November 2015","Woman dies following attack by police dog - Cleveland Police, July 2014"],["This investigation arose as a result of complaints made by a former Cleveland police officer. There are two separate strands to the complaints made:\nThe first of these arise from an allegation that the former officer was subjected to bullying and racism whilst posted to the Criminal Investigations Department (CID). The former officer reported these matters to senior officers within Cleveland Police in April 2011. In July of 2011, the Cleveland Black Police Association (CBPA) submitted a report to a senior officer within Cleveland Police, highlighting their concerns over potential institutional racism within the force. The report from the CBPA prompted Cleveland Police to commence a process known as the 'Equality Review' which ran between 2011 and 2012. This was a fact-finding enquiry which the former officer engaged with and the intention was for it to be a response to the concerns raised by Black, Asian and Minority Ethnic (BAME) officers and staff. \nThe former officer subsequently alleged that the scope of the Equality Review was deliberately changed to hide discrimination within the force and that Cleveland Police's then Chief Constable misrepresented the review's findings to the media by failing to disclose information given to the review by BAME officers and claiming there was no institutional racism within Cleveland Police.\nThe second strand of the former officer's complaints were made to the IOPC in 2014 when it was alleged that, following the complaints of bullying and racism, there was a campaign orchestrated by senior officers within Cleveland Police to undermine and 'destroy' the former officer.\nThe former officer later claimed that Cleveland Police failed to make sufficient efforts to identify a witness who was able to provide evidence to support the claim that there was an organised conspiracy to 'destroy' the former officer. It was suggested that this witness could provide evidence of organisational criminality and corruption by the force but this information was supressed by Cleveland Police.  \nThe former officer made complaints to Cleveland Police between April and June 2014. They were recorded by the force and voluntarily referred to the IOPC on 26 June 2014. The IOPC passed the referral back to Cleveland Police so that they could be investigated locally. Due to the sensitivities around the allegations and the high potential for a conflict of interests, Cleveland Police asked the Metropolitan Police Service (MPS) to conduct the investigation on their behalf. The MPS carried out an investigation (under the operational name of Op Talon), into all the allegations made by the former officer. The MPS investigation commenced in July 2014 and was concluded on 24 June 2016, when they reported they had found no evidence to support the allegations.\nOn 6 September 2016, the former officer appealed to the IOPC against the findings of the Op Talon investigation. The appeal was partially upheld and the IOPC decided that further additional investigation should be conducted to explore specific areas of the complaints. An IOPC independent investigation began in December 2017.\nDuring the IOPC investigation, witnesses, who the former officer suggested may be able to assist the investigation, were interviewed and statements obtained. Material gathered by the MPS (Op Talon) investigation has also been examined and considered. The former officer also indicated that evidence presented to named employment tribunals and a Home Affairs Select Committee (HASC) hearing would be relevant to the complaints. This material has also been examined by the IOPC.\nThe IOPC independent investigation was completed in July 2020. The investigation found that none of the witnesses who were spoken to were able to provide evidence in support of the former officer's specific complaints. The material gathered by the MPS (Op Talon) was examined and found to be consistent with the findings of that investigation. Material presented to the employment tribunals and the HASC hearing were examined but found not to be evidentially relevant to the complaints.\nThe IOPC has not upheld the complaints made by the former officer and found no evidence to indicate misconduct or criminality on the part of any of the Cleveland police officers or members of police staff named in the complaints.\n \n","In May 2019, a Police and Community Safety Officer (PCSO) from Cleveland Police visited two people following a report of a dispute between the two neighbours. After an additional report was made, the PCSO and a colleague made a further visit and advised both parties.\nLater the same day, the PCSO emailed one of the parties from their personal email account while off duty. The recipient felt that the email was inappropriate and may have been an attempt to instigate a personal relationship with them and made a complaint to Cleveland Police. Cleveland Police referred the matter to us as a complaint and we decided to undertake an independent investigation.\nOur investigators interviewed the PCSO and obtained statements from several witnesses, including the complainant and the PCSO's colleagues. We reviewed all email contact between the complainant and the PCSO. We also obtained and reviewed local and national policies and procedures, and relevant documentation from Cleveland Police.\nBased on the evidence available we were of the opinion that the PCSO may have a case to answer for misconduct. We completed our investigation on 27 January 2020.\nAfter reviewing our report Cleveland Police agreed. The PCSO attended a misconduct meeting in summer 2020 and was given a written warning\n","At 10.24am on 15 August 2017, a man approached a Cleveland Police officer in a distressed state, asking to be arrested. The officer was concerned about the man and took him to a mental health hospital for a mental health assessment, as a voluntary attendee. They arrived at hospital at approximately 11.30am; the officer stayed with the man for 30 minutes and then left the hospital at approximately 12pm.\nAt 12.06pm a member of the hospital staff called Cleveland Police to advise the man had left the hospital before being assessed. Control room personnel passed this information to the officer at 12.11pm and the log was closed. No further investigation took place to locate the man\nOn 16 August 2017 at 7.03am, a member of the public found the man's body. He was pronounced dead at 10.34am.\nDuring the investigation, our investigators interviewed one police officer and three contractors working in the control room for alleged misconduct, and took witness statements from hospital staff. They also obtained audio recordings of calls regarding the man, and documentary evidence from hospital and police systems.\nAt the end of the investigation, based on the evidence available, we were of the view that the police officer had acted appropriately in their dealings with the man. The officer believed that they were simply being notified by the control room that the man had left hospital because of their earlier contact with them, and that any further action should have been directed by the control room. We considered this to be reasonable in the circumstances and were therefore of the opinion that the officer did not have a case to answer for misconduct or any performance issues to address.\nWe were also of the opinion that the performance of two contractors working in the control room could be considered unsatisfactory for the following reasons: failing to conduct a risk assessment; failing to consider the man as a missing person; and failing to ensure that appropriate safeguarding enquiries were carried out after the man had left hospital without being assessed. We found no performance issues for a third contractor working in the control room.\nAfter reviewing our report, Cleveland Police agreed that the performance of both control room contractors would be dealt with as unsatisfactory performance, to include a meeting with their line managers. The force will also deal with the matter as organisational learning.\n","On 21 August 2019, Cleveland Police officers arrested a man and took him to hospital where he received treatment for an injury to his arm and a mental health assessment. The man was taken from hospital to a custody suite where he was detained. During his detention, the man self-harmed and opened the wound on his arm using his teeth and a small piece of metal. He also suffered from chest pains while in custody and was taken back to hospital by ambulance.\nFollowing a Death or Serious injury referral by Cleveland Police, we determined that the incident should be subject to a local investigation. After reviewing the local investigation report, we identified potential conduct and therefore invited Cleveland Police to make a conduct referral. \nOn 19 June 2020, we declared an independent investigation. During our investigation we obtained CCTV footage from the custody suite and the man's custody record. Based on this evidence, we identified potential conduct for a custody officer in relation to the appropriateness of the risk assessment and care plan. We also identified potential conduct for a detention officer in relation to their response to the man self-harming in his cell. We obtained witness statements from detention officers and police officers involved in the man's detention. We then interviewed both subject officers under misconduct caution and reviewed their responses against local and national policies and procedures. \nWe completed our investigation in January 2021. We were of the opinion, both subject officers had no case to answer and there were no further proceedings. We shared our report with Cleveland Police who agreed with our conclusions. Weadvised that the detention officer would benefit from additional training to ensure fullawareness of responsibilities and duty of care. We also suggested a form of management action for the custody officer. They agreed that the detention officer would benefit from management action but failures involving the custody officer wereorganisational and steps were taken in a timely manner to safeguard the man.\nWe carefully considered whether there were any learning opportunities arising from the investigation. We make learning recommendations to improve policing and public confidence in the police complaints system and to prevent a recurrence of similar incidents. We identified three areas of learning and have progressed these under Paragraph 28A of the Police Reform Act 2002.\n","On 3 November 2015, Cleveland Police received a 999 emergency telephone call from a resident of a hotel in Middlesbrough, reporting they had been threatened by another resident, who was in possession of a knife.\nThe caller explained to police staff that they had locked themselves in a room. Because of this, police staff assessed that the caller was not under any immediate threat. This assessment led to the decision that the incident did not require an emergency response from police.\nThe next day, Cleveland Police received a further telephone call from the same resident, reporting they had been threatened again by the same person.\nPolice officers arrived at the hotel to arrest the man alleged to have threated the resident, who had barricaded themselves in his room. He threatened to stab any police officer who entered the room and then proceeded to climb out of a window onto a first floor roof.\nPolice officers called further emergency services and negotiators to the scene. The man could not be persuaded to leave the roof and return to his room. He climbed further up onto the main roof of the building.\nThe manager of the hotel arrived at the scene, erected a ladder to the side of the building and shouted to the man to come down from the roof.\nThe man then slid down the roof tiles in a seated position and subsequently fell approximately ten feet. He sustained a serious injury to his hip as a result of the fall.\nDuring the course of the investigation the Investigator reviewed recordings of the 999 calls and body-worn camera footage; conducted house-to-house enquiries to neighbouring properties; and obtained witness statements from the officers who attended the scene. The officer and staff also provided accounts.\nAt the conclusion of the investigation, the Investigator was of the opinion that the call handler and supervisor may have a case to answer for misconduct in respect of the risk assessments they completed in response to the initial call.\nAfter reviewing our report, Cleveland Police disagreed that the call handler had a case to answer, as they had dealt with the incident in line with the training they had received. They also disagreed that there was a case to answer for the supervisor, or that their performance had been unsatisfactory, having considered the policy which applies to prioritising events as well as a relevant point of legislation. They therefore proposed to take no further action.\nHaving considered their response, we agreed that this was appropriate.\n","At around 8.30pm on 16 July 2014 Cleveland Police stopped a car in Middlesbrough that contained three men and a substantial quantity of heroin and cash. One of the men escaped by running off into neighbouring gardens.\nThe police received information that the man might have been seen near the rear garden of a house. Police officers spoke with the woman who lived in the house and obtained her consent to search the rear garden.\nA Cleveland Police dog handler searched her garden with his police dog, who was unleashed throughout the search. Sometime later, unbeknown to the dog handler, the police dog entered the house through the back door and attacked the woman, causing serious injuries to her arm and leg. She was given first aid and transported to hospital, where she died four days later. The pathologist who carried out the post-mortem examination was of the opinion there was a causal link between her death and the injuries she sustained in the attack.\nDuring the investigation the Lead Investigator found an indication that the dog handler may have behaved in a manner which would justify the instigation of disciplinary and criminal proceedings. We interviewed him under criminal caution.\nInvestigators also obtained and reviewed statements from the woman's family, officers involved in the incident, as well as paramedics and medical staff who looked after the woman. They also examined images captured by a National Police Air Service helicopter deployed to assist in the search for the man, and compared them with corresponding police radio transmissions. Investigators reviewed relevant national and local policies and guidance.\nBased on the evidence available, the Lead Investigator was of the opinion that there was sufficient evidence to indicate that the dog handler had failed to undertake an appropriate risk assessment prior to releasing his police dog, and failed to control him once released.\nWe sent our final report to Cleveland Police for review in May 2015 and also referred the incident to the Crown Prosecution Service (CPS), as we found indications of criminality.\nCleveland Police asked to wait until the CPS had made a decision on criminality before making their determinations relating to misconduct.\nIn January 2016 the CPS informed us that it had decided not to bring any criminal proceedings against any of the persons involved in the incident.\nThe force then agreed to hold a misconduct meeting for the dog handler. The proceedings were postponed at the request of the conducting officer for the misconduct meeting.\nAt the meeting, held in November 2017, the allegations of misconduct were proven for the officer and he received a written warning.\nAn inquest into the woman's death was held in September 2018. The jury concluded that she had died from natural causes contributed to by the consequences of the dog bite while the dog was out of control.\n"],["'Discrimination', 'Cleveland Police'","'Corruption and abuse of power', 'Cleveland Police'","'Death and serious injury', 'Welfare and vulnerable people', 'Cleveland Police'","'Custody and detention', 'Cleveland Police'","'Death and serious injury', 'Cleveland Police'","'Death and serious injury', 'Cleveland Police'"],["<a href='https://policeconduct.gov.uk/recommendations/allegations-made-former-officer-operation-talon-cleveland-police-december-2017'>https://policeconduct.gov.uk/recommendations/allegations-made-former-officer-operation-talon-cleveland-police-december-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/complaint-regarding-inappropriate-contact-pcso-cleveland-police-may-2019'>https://policeconduct.gov.uk/recommendations/complaint-regarding-inappropriate-contact-pcso-cleveland-police-may-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-dies-following-contact-police-cleveland-police-august-2017'>https://policeconduct.gov.uk/recommendations/man-dies-following-contact-police-cleveland-police-august-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-sustained-serious-injury-while-custody-%E2%80%93-cleveland-police-august-2019'>https://policeconduct.gov.uk/recommendations/man-sustained-serious-injury-while-custody-%E2%80%93-cleveland-police-august-2019<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-999-calls-cleveland-police-november-2015'>https://policeconduct.gov.uk/recommendations/response-999-calls-cleveland-police-november-2015<\/a>","<a href='https://policeconduct.gov.uk/recommendations/woman-dies-following-attack-police-dog-cleveland-police-july-2014'>https://policeconduct.gov.uk/recommendations/woman-dies-following-attack-police-dog-cleveland-police-july-2014<\/a>"],["17-Nov-2020","5-Oct-2020","29-Jan-2019","28-May-2021","8-Feb-2018","3-Oct-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-3ba2ac05d60d11eca1b8" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-9d572fb1f21e15f9fac0" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-3ba2ac05d60d11eca1b8">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Death and serious injury","Corruption and abuse of power","Custody and detention","Discrimination","Welfare and vulnerable people"],[3,1,1,1,1],[0.5,0.166666666666667,0.166666666666667,0.166666666666667,0.166666666666667]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 6 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-9d572fb1f21e15f9fac0">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Death and serious injury","Corruption and abuse of power","Custody and detention","Discrimination","Welfare and vulnerable people"],[3,1,1,1,1],[0.5,0.166666666666667,0.166666666666667,0.166666666666667,0.166666666666667]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 6 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

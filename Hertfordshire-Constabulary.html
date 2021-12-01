@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Hertfordshire Constabulary
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Hertfordshire Constabulary there were <strong>2 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>10 officers</strong> and <strong>5 police staff</strong>.
+At Hertfordshire Constabulary there were <strong>5 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>0 officers</strong> and <strong>9 police staff</strong>.
 </p>
 <p>
 <strong>3</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>3 officers</strong> and <strong>7 staff</strong>.
+The misconduct was proven in the case of <strong>3 officers</strong> and <strong>2 staff</strong>.
 </p>
 <p>
-Out of the 10 officers and 5 staff identified as having a case to answer for misconduct, <strong>5 officers</strong> and <strong>3 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 0 officers and 9 staff identified as having a case to answer for misconduct, <strong>7 officers</strong> and <strong>6 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>0 officers</strong> and <strong>2 staff</strong> received management action.
+<strong>9 officers</strong> and <strong>9 staff</strong> received management action.
 </p>
 <p>
-<strong>6 officers</strong> and <strong>2 staff</strong> were given a written warning.
+<strong>2 officers</strong> and <strong>9 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>6 officers</strong> and <strong>8 staff</strong> were dismissed.
+<strong>3 officers</strong> and <strong>1 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-4690f0a3b4d6adf6c5d0" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-87fe8e6d087c1392b137" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-4690f0a3b4d6adf6c5d0">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6"],["Contact with police before a man and a woman die - Hertfordshire Constabulary, June 2016","Inappropriate relationship with a vulnerable person ‚Äö√Ñ√¨ Hertfordshire Constabulary, October 2018","Man becomes unwell in custody - Hertfordshire Constabulary, June 2017","Man dies in custody - Hertfordshire Constabulary, September 2017","Man swallows drugs while in custody - Hertfordshire Constabulary, March 2016","Suicide following release from custody - Hertfordshire Constabulary, June 2016"],["In June 2016 Hertfordshire Constabulary arrested a man for offences against his ex-partner, whom he had previously been convicted of assaulting. The man was interviewed and bailed to return to the police station in 18 days. He was bailed to an address eight doors away from his ex-partner, with conditions not to enter her road or contact her directly or indirectly. She was assessed as a high-risk domestic abuse victim.\nTwo days after his arrest, the man allegedly breached his bail conditions by contacting his ex-partner and turning up at her address. She provided a statement, but no other action was taken by police in relation to this. \nOn his bail-to-return date, the man was re-bailed by the investigating officer instead of being charged for the offences. The next day, both the man and the woman were found dead. Hertfordshire Constabulary began a criminal investigation into their deaths, which concluded that he had killed her, then taken his own life.\nDuring our investigation, our investigators interviewed four officers, and put written questions to three officers regarding their decisions and actions in relation to the man and woman. \nThe Lead Investigator concluded there was evidence upon which a reasonable tribunal, properly directed, could find gross misconduct on behalf of one officer, and misconduct on behalf of two officers and a police member of staff. We concluded our investigation in November 2017.\nHertfordshire Constabulary reviewed our report and we had further discussions with them.\nOne officer was subject to a misconduct meeting regarding their decisions and actions around bailing the man. Misconduct was found to be not proven at the meeting and no further action was taken.\nAnother officer was subject to a misconduct (instead of gross misconduct) meeting in respect of seven allegations. At the meeting, four of the allegations were found proven, including taking no action against the man in light of evidence that he had breached bail conditions, failing to progress the matter, and failing to make a referral to the Crown Prosecution Service. The officer was given a written warning.\nAnother officer attended a misconduct meeting, where three out of four allegations were found proven, including failing to adequately supervise the case and the investigating officer, and failing to manage bail periods effectively and the breach of bail. The officer received management advice, a disciplinary outcome.\nThe force was of the opinion that the actions of the police member of staff had been an oversight. As the member of staff's performance had already been addressed, we agreed that no further action was required.\nIn spring 2019 an inquest was held into the deaths of the woman and her ex-partner. The jury concluded the man had died by suicide, and that the woman had been unlawfully killed, which was ‚Äö√Ñ√∫contributed to by the lack of communication between all parties, and the lack of visibility within and between authorities regarding [her] ex-partner's breach of bail conditions‚Äö√Ñ√π.\n","On 10 October 2018 several disclosures were made to Hertfordshire Constabulary by a vulnerable person alleging to have had an 11-year relationship with a serving police officer.\nContained within those disclosures were photographs of injuries allegedly caused by the officer.\nHertfordshire Constabulary made a referral and we began our independent investigation on 16 October 2018. We examined how the relationship started, the appropriateness of the relationship between the two people and whether the officer lied during disciplinary proceedings in 2013 regarding the relationship.\nDuring our investigation the officer was arrested and interviewed, the vulnerable person was interviewed, and statements were taken from police and civilian witnesses. We also spoke with family members of the vulnerable person. Our investigators downloaded and examined data from devices and around 1,900 pages of police and medical documentation was analysed.\nWe concluded our investigation in June 2019 when we passed a copy of our investigation report and its findings to Hertfordshire Constabulary. The force agreed with us that the officer had a case to answer for gross misconduct.\nAfter a thorough examination of all the evidence we also made a referral to the Crown Prosecution Service who decided to charge the officer with the offence of Misconduct in Public Office. The officer pleaded guilty and was sentenced to 15 months in prison on 17 July 2020.\nFollowing the conclusion of the criminal proceedings against the officer, Hertfordshire Constabulary arranged for a special case hearing which heard the evidence against the officer for alleged breaches in the standards of professional behaviour. The case against the officer was proven and the officer was dismissed without notice.\n","On 8 June 2017, Hertfordshire Constabulary officers arrested a man on suspicion of assault occasioning actual bodily harm, and criminal damage. They took him to custody at Hatfield police station. On arrival at the police station the man appeared unresponsive but, after making a quick recovery, was taken into custody. While in his cell, and before he was put into an anti-harm suit, he swallowed an unidentified tablet that he took from the pocket of his trousers. Later, he appeared to lose consciousness and was taken to hospital by ambulance, where he remained for three days.\nDuring the investigation into this incident, investigators interviewed the main officers and staff involved, obtained statements from several police witnesses and assessed CCTV and body-worn video footage.\nBased on the evidence available we found no indication that any person serving with the police may have behaved in a manner that would justify the bringing of disciplinary proceedings. However, we identified performance issue for one officer who used inappropriate language when referring to the man.\nAfter reviewing our report, the force agreed that there was no case to answer for misconduct for any of the officers, but that the comment made by one officer amounted to a breach of the standard of professional behaviour concerning 'Authority, Respect and Courtesy'. The officer will receive management action linked to a performance objective to read the Code of Ethics and standards of Professional Behaviour.\n","In September 2017 two Hertfordshire Constabulary officers arrested a man for being intoxicated, in breach of a criminal behaviour order. They took him into custody in the back of a police van. The man fell to the floor of the police van on the way to custody. The officers stopped their vehicle. One officer checked on the man, found him in the foetal position on the floor, established he was still responsive and decided to leave him in that position. They continued driving the man to custody. On the way, the officers were diverted to another police station. On arrival the man remained in the van while one of the officers arranged for the man to be booked in custody. When officers opened the door of the police van they found the man was unresponsive. An ambulance was called and was given cardiopulmonary resuscitation (CPR). Paramedics arrived a few minutes later and gave the man extensive advanced life-support treatment, but he was pronounced dead shortly after.\nDuring the investigation, investigators interviewed several witnesses, including ambulance service staff and a first-aid trainer. We found indications that the two officers who took the man into custody may have breached the standards of professional conduct.\nThe post-mortem concluded that the man had died from cardiac arrest and indicated that, while there may have been failings in the care offered to the man, there was no indication that these had contributed to the man's death.\nBased on the evidence available we were of the opinion that both officers may have a case to answer for misconduct for failing to take action for approximately 12 minutes when the man was found unresponsive, failing to immediately raise the alarm and request medical attention, failing to remove the man from the van and administer CPR immediately. In addition, we were of the view that one of the officers may have a case to answer for misconduct for failing in their duty of care towards the man after he fell on the floor in the van on the way to custody, and deciding to leave the man in a foetal position. We concluded our investigation in August 2018.\nAfter reviewing our report Hertfordshire Constabulary agreed. The two officers attended a misconduct meeting in early 2019, where it was found that they had breached professional standards of behaviour in the care they offered to the man. Both received management action.\n","On 3 March 2016 security guards in a shopping centre detained a man as they suspected him of shoplifting. While being detained, the man informed security staff that he had swallowed a bag of cannabis. The security team contacted Hertfordshire Constabulary, who deployed two police officers. The officers arrested the man and transported him to Hatfield custody suite. A member of the custody team noticed that the man had a package containing a substance concealed in his mouth. Officers attempted to make the man spit out the package, however, he was able to swallow it. After this, the man became unwell and was taken to hospital.\nAs part of the investigation, the Lead Investigator interviewed the two officers who had attended the shopping centre and arrested the man. The officers confirmed that they had been aware before they attended the incident that the man was suspected to have swallowed a substance. Following his arrest, the officers conducted a search of the man's person and property, but failed to search the man's mouth.\nAccording to guidance, an officer who knows or suspects that a detainee has swallowed drugs must treat the person as being in need of urgent medical attention and transfer them straight to hospital. The investigation found that the two officers transferred the man to Hatfield police station, rather than to hospital. \nThe evidence suggests that, on arrival at Hatfield custody suite, the arresting officers failed to inform custody staff that the man was suspected of swallowing a substance. The custody team did not become aware that the man was suspected of swallowing an item for approximately 38 minutes after he first arrived into custody.\nBased on the above, the Lead Investigator was of the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find misconduct in relation to the two arresting officers' action during the detention of the man.\nAfter reviewing our report, the force confirmed that it did not make its officers aware of the College of Policing's guidance on swallowed or packed drug packages until after the incident, but that this had now been disseminated to staff. The force agreed to hold a misconduct meeting for two officers for failing to:\nThe force held a misconduct meeting, at which the officers' misconduct was not proven.\n","On 6 June 2016, a Hertfordshire Constabulary officer arrested a man for alleged theft, and took him to Stevenage police station. During his time in custody, the man was assessed by a contracted healthcare professional (HCP) as fit to be interviewed. The HCP recorded his risk of suicide as 'standard'. On 7 June, the man was charged with theft and released on bail. Within the man's custody record, the pre-release risk assessment section was left blank.\nOn 8 June, the man took his own life. Upon hearing of his death, a police officer made a statement in which they detailed overhearing the man's sharing suicidal thoughts with the HCP during his medical assessment. \nHertfordshire Constabulary referred this to us on 9 June as a death or serious injury referral.\nDuring the investigation, investigators interviewed and obtained statements from police officers, police civilian staff and non-police witnesses. The investigation also obtained and examined custody CCTV, the man's custody record, his medical assessment record and relevant national and local police policies and procedures as well as the contractor's.\nInvestigators served gross misconduct notices on, and subsequently interviewed, one police officer who was responsible for completing the pre-release risk assessment and the contracted HCP who was responsible for completing the medical assessment in custody. \nThe Investigator was of the opinion that:\nThe HCP resigned before any misconduct proceedings could be brought against them. We referred the HCP to the Nursing and Midwifery Council and, following a fitness to practice investigation and subsequent hearing, they received a striking off order.\nThe investigation also identified three potential areas for improvement for Hertfordshire Constabulary:\nFollowing consultation with the force, we concluded that sufficient measures were being implemented to address the points above, and that we would not issue formal learning recommendations.\nWe also concluded that the measures put in place by the force in respect of point 1 above, such as further training, sufficiently addressed our concerns about the performance of the police officer, and that no further action was therefore required to address this.\n"],["'Death and serious injury', 'Domestic abuse', 'Hertfordshire Constabulary'","'Corruption and abuse of power', 'Welfare and vulnerable people', 'Hertfordshire Constabulary'","'Custody and detention', 'Death and serious injury', 'Hertfordshire Constabulary'","'Custody and detention', 'Death and serious injury', 'Hertfordshire Constabulary'","'Custody and detention', 'Hertfordshire Constabulary'","'Welfare and vulnerable people', 'Hertfordshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/contact-police-man-and-woman-die-hertfordshire-constabulary-june-2016'>https://policeconduct.gov.uk/recommendations/contact-police-man-and-woman-die-hertfordshire-constabulary-june-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/inappropriate-relationship-vulnerable-person-%E2%80%93-hertfordshire-constabulary-october'>https://policeconduct.gov.uk/recommendations/inappropriate-relationship-vulnerable-person-%E2%80%93-hertfordshire-constabulary-october<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-hertfordshire-constabulary-june-2017'>https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-hertfordshire-constabulary-june-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-dies-custody-hertfordshire-constabulary-september-2017'>https://policeconduct.gov.uk/recommendations/man-dies-custody-hertfordshire-constabulary-september-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-swallows-drugs-while-custody-hertfordshire-constabulary-march-2016'>https://policeconduct.gov.uk/recommendations/man-swallows-drugs-while-custody-hertfordshire-constabulary-march-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/suicide-following-release-custody-hertfordshire-constabulary-june-2016'>https://policeconduct.gov.uk/recommendations/suicide-following-release-custody-hertfordshire-constabulary-june-2016<\/a>"],["2-Jul-2018","23-Oct-2020","6-Aug-2018","19-Mar-2019","7-Mar-2018","13-Jun-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-87fe8e6d087c1392b137">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6"],["Contact with police before a man and a woman die - Hertfordshire Constabulary, June 2016","Inappropriate relationship with a vulnerable person ‚Äö√Ñ√¨ Hertfordshire Constabulary, October 2018","Man becomes unwell in custody - Hertfordshire Constabulary, June 2017","Man dies in custody - Hertfordshire Constabulary, September 2017","Man swallows drugs while in custody - Hertfordshire Constabulary, March 2016","Suicide following release from custody - Hertfordshire Constabulary, June 2016"],["In June 2016 Hertfordshire Constabulary arrested a man for offences against his ex-partner, whom he had previously been convicted of assaulting. The man was interviewed and bailed to return to the police station in 18 days. He was bailed to an address eight doors away from his ex-partner, with conditions not to enter her road or contact her directly or indirectly. She was assessed as a high-risk domestic abuse victim.\nTwo days after his arrest, the man allegedly breached his bail conditions by contacting his ex-partner and turning up at her address. She provided a statement, but no other action was taken by police in relation to this. \nOn his bail-to-return date, the man was re-bailed by the investigating officer instead of being charged for the offences. The next day, both the man and the woman were found dead. Hertfordshire Constabulary began a criminal investigation into their deaths, which concluded that he had killed her, then taken his own life.\nDuring our investigation, our investigators interviewed four officers, and put written questions to three officers regarding their decisions and actions in relation to the man and woman. \nThe Lead Investigator concluded there was evidence upon which a reasonable tribunal, properly directed, could find gross misconduct on behalf of one officer, and misconduct on behalf of two officers and a police member of staff. We concluded our investigation in November 2017.\nHertfordshire Constabulary reviewed our report and we had further discussions with them.\nOne officer was subject to a misconduct meeting regarding their decisions and actions around bailing the man. Misconduct was found to be not proven at the meeting and no further action was taken.\nAnother officer was subject to a misconduct (instead of gross misconduct) meeting in respect of seven allegations. At the meeting, four of the allegations were found proven, including taking no action against the man in light of evidence that he had breached bail conditions, failing to progress the matter, and failing to make a referral to the Crown Prosecution Service. The officer was given a written warning.\nAnother officer attended a misconduct meeting, where three out of four allegations were found proven, including failing to adequately supervise the case and the investigating officer, and failing to manage bail periods effectively and the breach of bail. The officer received management advice, a disciplinary outcome.\nThe force was of the opinion that the actions of the police member of staff had been an oversight. As the member of staff's performance had already been addressed, we agreed that no further action was required.\nIn spring 2019 an inquest was held into the deaths of the woman and her ex-partner. The jury concluded the man had died by suicide, and that the woman had been unlawfully killed, which was ‚Äö√Ñ√∫contributed to by the lack of communication between all parties, and the lack of visibility within and between authorities regarding [her] ex-partner's breach of bail conditions‚Äö√Ñ√π.\n","On 10 October 2018 several disclosures were made to Hertfordshire Constabulary by a vulnerable person alleging to have had an 11-year relationship with a serving police officer.\nContained within those disclosures were photographs of injuries allegedly caused by the officer.\nHertfordshire Constabulary made a referral and we began our independent investigation on 16 October 2018. We examined how the relationship started, the appropriateness of the relationship between the two people and whether the officer lied during disciplinary proceedings in 2013 regarding the relationship.\nDuring our investigation the officer was arrested and interviewed, the vulnerable person was interviewed, and statements were taken from police and civilian witnesses. We also spoke with family members of the vulnerable person. Our investigators downloaded and examined data from devices and around 1,900 pages of police and medical documentation was analysed.\nWe concluded our investigation in June 2019 when we passed a copy of our investigation report and its findings to Hertfordshire Constabulary. The force agreed with us that the officer had a case to answer for gross misconduct.\nAfter a thorough examination of all the evidence we also made a referral to the Crown Prosecution Service who decided to charge the officer with the offence of Misconduct in Public Office. The officer pleaded guilty and was sentenced to 15 months in prison on 17 July 2020.\nFollowing the conclusion of the criminal proceedings against the officer, Hertfordshire Constabulary arranged for a special case hearing which heard the evidence against the officer for alleged breaches in the standards of professional behaviour. The case against the officer was proven and the officer was dismissed without notice.\n","On 8 June 2017, Hertfordshire Constabulary officers arrested a man on suspicion of assault occasioning actual bodily harm, and criminal damage. They took him to custody at Hatfield police station. On arrival at the police station the man appeared unresponsive but, after making a quick recovery, was taken into custody. While in his cell, and before he was put into an anti-harm suit, he swallowed an unidentified tablet that he took from the pocket of his trousers. Later, he appeared to lose consciousness and was taken to hospital by ambulance, where he remained for three days.\nDuring the investigation into this incident, investigators interviewed the main officers and staff involved, obtained statements from several police witnesses and assessed CCTV and body-worn video footage.\nBased on the evidence available we found no indication that any person serving with the police may have behaved in a manner that would justify the bringing of disciplinary proceedings. However, we identified performance issue for one officer who used inappropriate language when referring to the man.\nAfter reviewing our report, the force agreed that there was no case to answer for misconduct for any of the officers, but that the comment made by one officer amounted to a breach of the standard of professional behaviour concerning 'Authority, Respect and Courtesy'. The officer will receive management action linked to a performance objective to read the Code of Ethics and standards of Professional Behaviour.\n","In September 2017 two Hertfordshire Constabulary officers arrested a man for being intoxicated, in breach of a criminal behaviour order. They took him into custody in the back of a police van. The man fell to the floor of the police van on the way to custody. The officers stopped their vehicle. One officer checked on the man, found him in the foetal position on the floor, established he was still responsive and decided to leave him in that position. They continued driving the man to custody. On the way, the officers were diverted to another police station. On arrival the man remained in the van while one of the officers arranged for the man to be booked in custody. When officers opened the door of the police van they found the man was unresponsive. An ambulance was called and was given cardiopulmonary resuscitation (CPR). Paramedics arrived a few minutes later and gave the man extensive advanced life-support treatment, but he was pronounced dead shortly after.\nDuring the investigation, investigators interviewed several witnesses, including ambulance service staff and a first-aid trainer. We found indications that the two officers who took the man into custody may have breached the standards of professional conduct.\nThe post-mortem concluded that the man had died from cardiac arrest and indicated that, while there may have been failings in the care offered to the man, there was no indication that these had contributed to the man's death.\nBased on the evidence available we were of the opinion that both officers may have a case to answer for misconduct for failing to take action for approximately 12 minutes when the man was found unresponsive, failing to immediately raise the alarm and request medical attention, failing to remove the man from the van and administer CPR immediately. In addition, we were of the view that one of the officers may have a case to answer for misconduct for failing in their duty of care towards the man after he fell on the floor in the van on the way to custody, and deciding to leave the man in a foetal position. We concluded our investigation in August 2018.\nAfter reviewing our report Hertfordshire Constabulary agreed. The two officers attended a misconduct meeting in early 2019, where it was found that they had breached professional standards of behaviour in the care they offered to the man. Both received management action.\n","On 3 March 2016 security guards in a shopping centre detained a man as they suspected him of shoplifting. While being detained, the man informed security staff that he had swallowed a bag of cannabis. The security team contacted Hertfordshire Constabulary, who deployed two police officers. The officers arrested the man and transported him to Hatfield custody suite. A member of the custody team noticed that the man had a package containing a substance concealed in his mouth. Officers attempted to make the man spit out the package, however, he was able to swallow it. After this, the man became unwell and was taken to hospital.\nAs part of the investigation, the Lead Investigator interviewed the two officers who had attended the shopping centre and arrested the man. The officers confirmed that they had been aware before they attended the incident that the man was suspected to have swallowed a substance. Following his arrest, the officers conducted a search of the man's person and property, but failed to search the man's mouth.\nAccording to guidance, an officer who knows or suspects that a detainee has swallowed drugs must treat the person as being in need of urgent medical attention and transfer them straight to hospital. The investigation found that the two officers transferred the man to Hatfield police station, rather than to hospital. \nThe evidence suggests that, on arrival at Hatfield custody suite, the arresting officers failed to inform custody staff that the man was suspected of swallowing a substance. The custody team did not become aware that the man was suspected of swallowing an item for approximately 38 minutes after he first arrived into custody.\nBased on the above, the Lead Investigator was of the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find misconduct in relation to the two arresting officers' action during the detention of the man.\nAfter reviewing our report, the force confirmed that it did not make its officers aware of the College of Policing's guidance on swallowed or packed drug packages until after the incident, but that this had now been disseminated to staff. The force agreed to hold a misconduct meeting for two officers for failing to:\nThe force held a misconduct meeting, at which the officers' misconduct was not proven.\n","On 6 June 2016, a Hertfordshire Constabulary officer arrested a man for alleged theft, and took him to Stevenage police station. During his time in custody, the man was assessed by a contracted healthcare professional (HCP) as fit to be interviewed. The HCP recorded his risk of suicide as 'standard'. On 7 June, the man was charged with theft and released on bail. Within the man's custody record, the pre-release risk assessment section was left blank.\nOn 8 June, the man took his own life. Upon hearing of his death, a police officer made a statement in which they detailed overhearing the man's sharing suicidal thoughts with the HCP during his medical assessment. \nHertfordshire Constabulary referred this to us on 9 June as a death or serious injury referral.\nDuring the investigation, investigators interviewed and obtained statements from police officers, police civilian staff and non-police witnesses. The investigation also obtained and examined custody CCTV, the man's custody record, his medical assessment record and relevant national and local police policies and procedures as well as the contractor's.\nInvestigators served gross misconduct notices on, and subsequently interviewed, one police officer who was responsible for completing the pre-release risk assessment and the contracted HCP who was responsible for completing the medical assessment in custody. \nThe Investigator was of the opinion that:\nThe HCP resigned before any misconduct proceedings could be brought against them. We referred the HCP to the Nursing and Midwifery Council and, following a fitness to practice investigation and subsequent hearing, they received a striking off order.\nThe investigation also identified three potential areas for improvement for Hertfordshire Constabulary:\nFollowing consultation with the force, we concluded that sufficient measures were being implemented to address the points above, and that we would not issue formal learning recommendations.\nWe also concluded that the measures put in place by the force in respect of point 1 above, such as further training, sufficiently addressed our concerns about the performance of the police officer, and that no further action was therefore required to address this.\n"],["'Death and serious injury', 'Domestic abuse', 'Hertfordshire Constabulary'","'Corruption and abuse of power', 'Welfare and vulnerable people', 'Hertfordshire Constabulary'","'Custody and detention', 'Death and serious injury', 'Hertfordshire Constabulary'","'Custody and detention', 'Death and serious injury', 'Hertfordshire Constabulary'","'Custody and detention', 'Hertfordshire Constabulary'","'Welfare and vulnerable people', 'Hertfordshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/contact-police-man-and-woman-die-hertfordshire-constabulary-june-2016'>https://policeconduct.gov.uk/recommendations/contact-police-man-and-woman-die-hertfordshire-constabulary-june-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/inappropriate-relationship-vulnerable-person-%E2%80%93-hertfordshire-constabulary-october'>https://policeconduct.gov.uk/recommendations/inappropriate-relationship-vulnerable-person-%E2%80%93-hertfordshire-constabulary-october<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-hertfordshire-constabulary-june-2017'>https://policeconduct.gov.uk/recommendations/man-becomes-unwell-custody-hertfordshire-constabulary-june-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-dies-custody-hertfordshire-constabulary-september-2017'>https://policeconduct.gov.uk/recommendations/man-dies-custody-hertfordshire-constabulary-september-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-swallows-drugs-while-custody-hertfordshire-constabulary-march-2016'>https://policeconduct.gov.uk/recommendations/man-swallows-drugs-while-custody-hertfordshire-constabulary-march-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/suicide-following-release-custody-hertfordshire-constabulary-june-2016'>https://policeconduct.gov.uk/recommendations/suicide-following-release-custody-hertfordshire-constabulary-june-2016<\/a>"],["2-Jul-2018","23-Oct-2020","6-Aug-2018","19-Mar-2019","7-Mar-2018","13-Jun-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-f25f8b216f2dd7134d86" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-29a5882f4592d2939ce1" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-f25f8b216f2dd7134d86">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Custody and detention","Death and serious injury","Welfare and vulnerable people","Corruption and abuse of power","Domestic abuse"],[3,3,2,1,1],[0.5,0.5,0.333333333333333,0.166666666666667,0.166666666666667]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 6 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-29a5882f4592d2939ce1">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4","5"],["Custody and detention","Death and serious injury","Welfare and vulnerable people","Corruption and abuse of power","Domestic abuse"],[3,3,2,1,1],[0.5,0.5,0.333333333333333,0.166666666666667,0.166666666666667]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 6 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

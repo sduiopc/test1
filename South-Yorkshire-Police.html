@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: South Yorkshire Police
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At South Yorkshire Police there were <strong>3 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>3 officers</strong> and <strong>5 police staff</strong>.
+At South Yorkshire Police there were <strong>4 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>7 officers</strong> and <strong>6 police staff</strong>.
 </p>
 <p>
 <strong>3</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>2 officers</strong> and <strong>7 staff</strong>.
+The misconduct was proven in the case of <strong>0 officers</strong> and <strong>8 staff</strong>.
 </p>
 <p>
-Out of the 3 officers and 5 staff identified as having a case to answer for misconduct, <strong>5 officers</strong> and <strong>2 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 7 officers and 6 staff identified as having a case to answer for misconduct, <strong>1 officers</strong> and <strong>2 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>9 officers</strong> and <strong>1 staff</strong> received management action.
+<strong>3 officers</strong> and <strong>0 staff</strong> received management action.
 </p>
 <p>
-<strong>3 officers</strong> and <strong>4 staff</strong> were given a written warning.
+<strong>7 officers</strong> and <strong>9 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>5 officers</strong> and <strong>0 staff</strong> were dismissed.
+<strong>5 officers</strong> and <strong>4 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-45d78f030c17ae84def4" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-7a8c12601c9a776fa66b" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-45d78f030c17ae84def4">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6","7","8"],["Death following police investigation into sexual offence - South Yorkshire Police,  October 2017","Fatal collision - South Yorkshire Police, January 2017","Handling of a report of possible grooming - South Yorkshire Police, 2011","Man takes his own life following police contact - South Yorkshire Police, August 2017","Police car collided with another car - South Yorkshire Police, October 2016","Response to alleged threats to life - South Yorkshire Police, August 2016","Response to concern for welfare call - South Yorkshire Police, June 2018","Response to concern for welfare reports - South Yorkshire Police, March 2017"],["On 29 October 2017, a teenage girl reported to South Yorkshire Police (SYP) that she had been sexually assaulted. SYP commenced a sexual offences investigation and interviewed a suspect who denied the offences. The girl made further allegations of sexual offences during the investigation. On 8 May 2018, SYP decided there was no realistic prospect of a conviction and finalised the investigation. SYP did not refer the matter to the Crown Prosecution Service (CPS). On 16 November 2018, the girl's father and stepfather tragically found her body after she had not returned home from school.\nOn 7 February 2019, her stepfather made a complaint alleging that SYP had failed to adequately investigate the allegations, had failed to refer them to the CPS for their consideration and had also failed to provide the necessary safeguarding measures to support and protect his stepdaughter. He believed her mental health deteriorated as a result and believed that this was a contributory factor in her death. SYP subsequently re-investigated the allegations and referred the case to the CPS who decided to take no further action.\nWe obtained witness statements from the police officers involved in the sexual offences investigation. We also obtained investigative material from partner agencies detailing their interactions with SYP and the girl. The available evidence indicated that one of the SYP investigating officers for the sexual offences investigation may have acted outside local policy and procedure and national guidance during the investigation. \nWe completed our investigation in September 2020 and shared our report with SYP who agreed that the investigating officer had a case to answer for misconduct and should appear before a misconduct meeting. The investigation concluded there was no indication that any other police officers or police staff may have behaved in a manner that would justify the bringing of disciplinary proceedings or committed a criminal offence. All were treated as witnesses. \nWe waited until the misconduct meeting in February 2021 before publishing its outcome. The officer appeared before a misconduct meeting where misconduct was found for three alleged breaches of the police Standards of Professional Behaviour. The officer was given a sanction of a final written warning.\nThroughout this investigation, we carefully considered whether there were any opportunities for learning or improvement. In this case, we did not identify any learning opportunities.\n","On 7 January 2017 a South Yorkshire Police officer driving a liveried police vehicle was involved in a road traffic collision in Sheffield with a pedestrian. The pedestrian received fatal injuries and died at the scene. The officer was not responding to an emergency but was attending a pre-arranged diary appointment.\nData obtained from the vehicle revealed that the vehicle was being driven at 42mph prior to impact with the pedestrian; the road where the collision took place is governed by a 30mph speed restriction.\nDuring the investigation investigators interviewed the officer, obtained statements from several witnesses, and seized and viewed CCTV footage. Various vehicle examinations were also carried out, along with a reconstruction of the incident.\nThe Investigator concluded that there was sufficient evidence upon which a reasonable tribunal could conclude that the officer had a case to answer for gross misconduct.\nWe referred the matter to the Crown Prosecution Service (CPS) for them to consider offences of causing death by dangerous driving, causing death by driving without due care and attention, driving without due care and attention, and speeding. Two CPS prosecutors reviewed the case and concluded that there was no realistic prospect of conviction for any offence.\nAfter reviewing our investigation report, and in light of the CPS decision, South Yorkshire Police determined that the officer had a case to answer for misconduct rather than gross misconduct. We considered the force's view and agreed with them.\nSouth Yorkshire Police held a misconduct meeting; the officer was found to have breached the standards of professional behaviour. He was given management advice and required to attend a driver training course.  \nAn inquest into the man's death was held; the Coroner recorded a narrative finding.\n","In December 2014, we received a complaint in relation to South Yorkshire Police's (SYP) handling of investigations involving child sexual exploitation in Rotherham. As part of a significant investigation, our investigators identified potential conduct issues for a police officer and member of police staff in Barnsley in relation to failing to investigate events that occurred in 2011. In 2016, SYP referred this matter to us as a conduct issue.\nFollowing an independent investigation, we subsequently found that this failure to investigate was predominantly due to a confusion between policing districts over which was responsible for investigating the report.\nA police officer and a member of police staff were treated as subjects of the investigation and served with notices of investigation, which detailed their alleged failings. In the course of the investigation, our investigators interviewed both subjects, obtained witness statements and analysed documentation from SYP systems along with legislation, policies and procedures relevant in 2011.\nThe Investigator formed the opinion that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find misconduct for the police officer or member of police staff, but did highlight potential performance issues in respect of both.\nAfter reviewing our report, SYP determined there was no misconduct for either, but that there were performance issues only for the police officer. They proposed to deal with this through management words of advice. We agreed that the determination was appropriate.\n","At 12.10am on 24 August 2017, South Yorkshire Police (SYP) officers arrested a man on suspicion of assault. They transported him to Shepcote Lane custody suite, where the custody officer authorised his detention. During his detention, the man made threats to hang himself if his partner had taken his methadone prescription. He remained in custody until 2.21pm, when SYP officers concluded no further action would be taken in relation to the offences.\nThe custody officer arranged for SYP officers to accompany the man to the council offices, where they helped arrange for the locks to his flat to be replaced and assisted in obtaining a methadone prescription.  At 5.40pm, two council workers arrived at the man's flat to replace the locks but found him hanging from the loft hatch. They telephoned for an ambulance and paramedics pronounced him dead at the scene.\nOn 13 March 2018, following a local investigation, SYP referred this to us after identifying potential misconduct on the part of the custody officer.\nInvestigators reviewed the evidence collated from the SYP investigation, the custody CCTV footage and interviewed the custody officer. During the investigation, the investigator found an indication that the custody officer may not have accurately completed the man's pre-release risk assessment. The custody officer co-operated with the investigation and provided a detailed rationale for his decisions.\nBased on the evidence available, we were of the opinion that the custody officer had acted in accordance with detention and custody guidance and did everything possible to mitigate the risk the man posed to himself. We found no indication that the custody officer had behaved in a manner that would justify the bringing of disciplinary proceedings.\nAfter reviewing our report, SYP agreed with our findings.\n","On 23 October 2016 at around 9pm, a South Yorkshire Police officer was driving a liveried police car approaching a junction in Sheffield. The officer was driving to a police station to assist colleagues with booking a man into custody. The man had just been arrested and was being transported in a separate van. The man was reported to be behaving aggressively and the officer stated he was trying to catch up with the van in order to assist colleagues in dealing with the man on arrival at the station.\nAt the same time, a member of the public was approaching the same junction, with his wife as a passenger in the car. As he approached the triangular 'Y' junction he intended to turn right and right again at the junction, back onto the same road but in the opposite direction.\nThe member of the public turned right at the junction and the police car collided with him. The front of the police car hit the rear of the other car. Because of the collision, the man was admitted to hospital in Sheffield with spinal fractures.\nDuring the investigation, our investigators interviewed the police driver under criminal and misconduct cautions. We also examined data evidence relating to the speed of the police car.\nEvidence showed that the officer had been driving at a peak speed of 66mph in a 40mph zone approximately 1.15 seconds before the collision. In interview, the officer said they had been making use of their legal exemption from the prescribed speed limit for policing purposes. The data recorder within the car showed that the police driver did not activate the emergency equipment (siren, blue or rear flashing red lights) while using their legal exemption and prior to the collision.\nWe were not able to determine the point of collision, and therefore to establish the point on the road at which the officer applied the brakes, to determine the police car's line of sight or position in relation to the junction.\nThe Investigator was of the opinion that the officer should have reduced their speed on approaching the potential hazard posed by the emerging junction and made use of the car's emergency warning equipment. Having reviewed the evidence in conjunction with the relevant policies and procedures, the Investigator was also of the opinion that the officer's use of the legal exemption appeared not to have been proportionate, necessary and reasonable in the circumstances.\nBased on the evidence available, the Investigator was of the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct in respect of the officer for their standard of driving prior to the collision with the member of the public.\nWe also found indications that the officer may have committed a criminal offence under the Road Traffic Act 1988 and submitted our report and evidence to the Crown Prosecution Service (CPS) for review.\nThe CPS authorised a charge of causing injury by dangerous driving against the officer. However, the officer pleaded guilty to the lesser charge of careless driving and was given a fine and six penalty points on their driving licence.\nAlthough the force, after reviewing our report, initially agreed that the officer had a case to answer for gross misconduct, it subsequently revised its determination to misconduct, following the lesser charge of careless driving being accepted. The force provided detailed additional rationale for their determination.\nAfter careful consideration of all the evidence and of the force's rationale, we agreed that a misconduct meeting was appropriate in the circumstances.\nAt the misconduct meeting, the officer was given a written warning.\n","In August 2016 a South Yorkshire Police (SYP) officer investigated an allegation of threats to kill reported by a man. During the course of the investigation, the man who had allegedly received the threats intimated to the officer on the phone that he would take matters into his own hands. SYP officers arrested the man who had allegedly made the threats to kill. The man said that he himself had been assaulted and threatened by the other man. Police were unable to find evidence of the alleged assault or injuries to the man. They bailed and released the man and took no further action regarding the alleged assault.\nThe man who first reported the alleged threats later murdered the other man.\nDuring the investigation, our investigators obtained witness statements and reviewed a number of police documents, policies and procedures. They also interviewed the SYP officer in relation to their alleged breaches of the standards of professional behaviour in conducting the investigation.\nThe officer provided us with a written statement in which they explained that they did not perceive the comments of the man who had reported threats to kill as a threat for the other man. They believed that he was an upset victim of crime who was frustrated with police processes.\nThe evidence suggested that the man's comments, although possibly implying some level of violent intent, did not explicitly state what action he intended to take, or when he intended to take it. In the Lead Investigator's opinion, the SYP officer's assessment that the comments were borne out of frustration was understandable in the circumstances.\nAs regards the other man's claim that he had been assaulted, the officer explained in their written response that they were satisfied that their colleague had investigated the incident. They had no reason to doubt their assessment that the alleged assault had not taken place. In the Lead Investigator's view, it was reasonable for the officer not to have followed this line of enquiry, as they had relied on the overall professional judgement of another officer regarding the validity of the allegation.\nBased on the evidence available, the Lead Investigator concluded that there was insufficient evidence upon which a reasonable tribunal could conclude that the officer had a case to answer for misconduct.\nAfter reviewing our report, the force agreed with our findings.\n","On 14 June 2018, a member of staff from Aspire Drug and Alcohol Services contacted South Yorkshire Police (SYP) to ask them to carry out a 'safe and well' check on a man. The Call Resolution Officer (CRO) who answered the call confirmed that SYP would visit the man's home as a matter of priority. The Aspire staff member contacted SYP on 15 June 2018 and discovered that the check had not been conducted. On 15 June 2018, a member of staff from a homeless charity reported their concerns for the same man to SYP. Officers visited the man's home, where, after forcing entry into the property, they found the man unconscious inside. He was later pronounced dead.\nAn inquest concluded in February 2019 that the man's death was drug related.\nOur investigators obtained a copy of the incident log the CRO had created in relation to the call on 14 June 2018. They also obtained a recording of the telephone call between the CRO and Aspire, which was found not to correspond with the entries recorded on the incident log. Investigators obtained copies of relevant SYP policies, obtained statements, examined telephone records and interviewed the CRO concerned under a misconduct caution. All police officers and staff co-operated fully with this investigation.\nThe CRO admitted that the entries they recorded on the incident log did not correspond to what was discussed during the telephone call. They maintained that it was an accurate reflection of their subsequent decision not to deploy police resources, as they felt the circumstances did not warrant a police response. They also said they had been unable to contact Aspire to inform them that no officers would be deployed.\nWhile the CRO provided a persuasive explanation for the discrepancies between the telephone call transcript and their entry on the incident log, we were of the opinion that they should not have endorsed the log with what turned out to be a future action. They should have recorded their considerations, and the fact that they were unable to inform Aspire, and made arrangements to update them the next day when their office was open. Having considered all of these issues, we believed these matters could be dealt with by way of management action. We completed our investigation in November 2018.\nAfter reviewing our report, SYP agreed with our findings in respect of the CRO. They also agreed to provide guidance to all CROs with regards to the relevant policy which should take primacy in situations such as this.\n","On 14 March 2017 a woman contacted South Yorkshire Police (SYP) as she was concerned for her neighbour's welfare, given that she had not seen him for a period of time. Officers from SYP went to the man's home and were unable to make contact with him. Further calls were made by the man's friends and family over a two-day period and two more SYP officers went to the man's home, but with no success.\nThe Yorkshire Ambulance Service was called and gained entry to the property with the assistance of Yorkshire Fire and Rescue. The man was found dead in his home.\nDuring the investigation, investigators interviewed four police officers and spoke to a control room operator under the misconduct caution. We obtained witness statements from members of the public, the Yorkshire Ambulance Service and Yorkshire Fire and Rescue.\nThe investigator formed the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find a case to answer for misconduct for two of the police officers for failing to pursue all reasonable lines of enquiry in locating the man and failing to adequately consider the risk factors known to them; and for a third officer for their actions when going to the man's home on 15 March.\nAfter reviewing our report, SYP agreed that the officers had breached their standards of responsibility and that there was significant learning for all three officers. They proposed to deal with this through management action so that officers can reflect on the learning from this investigation and develop their skills in relation to this area.\nWe agreed that their proposals were appropriate in the circumstances.\n"],["'Welfare and vulnerable people', 'South Yorkshire Police'","'Road traffic incidents', 'South Yorkshire Police'","'Child sexual abuse', 'South Yorkshire Police'","'Welfare and vulnerable people', 'South Yorkshire Police'","'Death and serious injury', 'Road traffic incidents', 'South Yorkshire Police'","'Death and serious injury', 'South Yorkshire Police'","'Death and serious injury', 'Welfare and vulnerable people', 'South Yorkshire Police'","'Welfare and vulnerable people', 'South Yorkshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/death-following-police-investigation-sexual-offence-south-yorkshire-police-october'>https://policeconduct.gov.uk/recommendations/death-following-police-investigation-sexual-offence-south-yorkshire-police-october<\/a>","<a href='https://policeconduct.gov.uk/recommendations/fatal-collision-south-yorkshire-police-january-2017'>https://policeconduct.gov.uk/recommendations/fatal-collision-south-yorkshire-police-january-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/handling-report-possible-grooming-south-yorkshire-police-2011'>https://policeconduct.gov.uk/recommendations/handling-report-possible-grooming-south-yorkshire-police-2011<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-takes-his-own-life-following-police-contact-south-yorkshire-police-august-2017'>https://policeconduct.gov.uk/recommendations/man-takes-his-own-life-following-police-contact-south-yorkshire-police-august-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/police-car-collided-another-car-south-yorkshire-police-october-2016'>https://policeconduct.gov.uk/recommendations/police-car-collided-another-car-south-yorkshire-police-october-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-alleged-threats-life-south-yorkshire-police-august-2016'>https://policeconduct.gov.uk/recommendations/response-alleged-threats-life-south-yorkshire-police-august-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-call-south-yorkshire-police-june-2018'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-call-south-yorkshire-police-june-2018<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-south-yorkshire-police-march-2017'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-south-yorkshire-police-march-2017<\/a>"],["1-Jun-2021","19-Jul-2018","15-Mar-2018","29-Aug-2018","23-Nov-2018","16-Aug-2018","6-Mar-2019","6-Sep-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-7a8c12601c9a776fa66b">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2","3","4","5","6","7","8"],["Death following police investigation into sexual offence - South Yorkshire Police,  October 2017","Fatal collision - South Yorkshire Police, January 2017","Handling of a report of possible grooming - South Yorkshire Police, 2011","Man takes his own life following police contact - South Yorkshire Police, August 2017","Police car collided with another car - South Yorkshire Police, October 2016","Response to alleged threats to life - South Yorkshire Police, August 2016","Response to concern for welfare call - South Yorkshire Police, June 2018","Response to concern for welfare reports - South Yorkshire Police, March 2017"],["On 29 October 2017, a teenage girl reported to South Yorkshire Police (SYP) that she had been sexually assaulted. SYP commenced a sexual offences investigation and interviewed a suspect who denied the offences. The girl made further allegations of sexual offences during the investigation. On 8 May 2018, SYP decided there was no realistic prospect of a conviction and finalised the investigation. SYP did not refer the matter to the Crown Prosecution Service (CPS). On 16 November 2018, the girl's father and stepfather tragically found her body after she had not returned home from school.\nOn 7 February 2019, her stepfather made a complaint alleging that SYP had failed to adequately investigate the allegations, had failed to refer them to the CPS for their consideration and had also failed to provide the necessary safeguarding measures to support and protect his stepdaughter. He believed her mental health deteriorated as a result and believed that this was a contributory factor in her death. SYP subsequently re-investigated the allegations and referred the case to the CPS who decided to take no further action.\nWe obtained witness statements from the police officers involved in the sexual offences investigation. We also obtained investigative material from partner agencies detailing their interactions with SYP and the girl. The available evidence indicated that one of the SYP investigating officers for the sexual offences investigation may have acted outside local policy and procedure and national guidance during the investigation. \nWe completed our investigation in September 2020 and shared our report with SYP who agreed that the investigating officer had a case to answer for misconduct and should appear before a misconduct meeting. The investigation concluded there was no indication that any other police officers or police staff may have behaved in a manner that would justify the bringing of disciplinary proceedings or committed a criminal offence. All were treated as witnesses. \nWe waited until the misconduct meeting in February 2021 before publishing its outcome. The officer appeared before a misconduct meeting where misconduct was found for three alleged breaches of the police Standards of Professional Behaviour. The officer was given a sanction of a final written warning.\nThroughout this investigation, we carefully considered whether there were any opportunities for learning or improvement. In this case, we did not identify any learning opportunities.\n","On 7 January 2017 a South Yorkshire Police officer driving a liveried police vehicle was involved in a road traffic collision in Sheffield with a pedestrian. The pedestrian received fatal injuries and died at the scene. The officer was not responding to an emergency but was attending a pre-arranged diary appointment.\nData obtained from the vehicle revealed that the vehicle was being driven at 42mph prior to impact with the pedestrian; the road where the collision took place is governed by a 30mph speed restriction.\nDuring the investigation investigators interviewed the officer, obtained statements from several witnesses, and seized and viewed CCTV footage. Various vehicle examinations were also carried out, along with a reconstruction of the incident.\nThe Investigator concluded that there was sufficient evidence upon which a reasonable tribunal could conclude that the officer had a case to answer for gross misconduct.\nWe referred the matter to the Crown Prosecution Service (CPS) for them to consider offences of causing death by dangerous driving, causing death by driving without due care and attention, driving without due care and attention, and speeding. Two CPS prosecutors reviewed the case and concluded that there was no realistic prospect of conviction for any offence.\nAfter reviewing our investigation report, and in light of the CPS decision, South Yorkshire Police determined that the officer had a case to answer for misconduct rather than gross misconduct. We considered the force's view and agreed with them.\nSouth Yorkshire Police held a misconduct meeting; the officer was found to have breached the standards of professional behaviour. He was given management advice and required to attend a driver training course.  \nAn inquest into the man's death was held; the Coroner recorded a narrative finding.\n","In December 2014, we received a complaint in relation to South Yorkshire Police's (SYP) handling of investigations involving child sexual exploitation in Rotherham. As part of a significant investigation, our investigators identified potential conduct issues for a police officer and member of police staff in Barnsley in relation to failing to investigate events that occurred in 2011. In 2016, SYP referred this matter to us as a conduct issue.\nFollowing an independent investigation, we subsequently found that this failure to investigate was predominantly due to a confusion between policing districts over which was responsible for investigating the report.\nA police officer and a member of police staff were treated as subjects of the investigation and served with notices of investigation, which detailed their alleged failings. In the course of the investigation, our investigators interviewed both subjects, obtained witness statements and analysed documentation from SYP systems along with legislation, policies and procedures relevant in 2011.\nThe Investigator formed the opinion that there was insufficient evidence upon which a reasonable tribunal, properly directed, could find misconduct for the police officer or member of police staff, but did highlight potential performance issues in respect of both.\nAfter reviewing our report, SYP determined there was no misconduct for either, but that there were performance issues only for the police officer. They proposed to deal with this through management words of advice. We agreed that the determination was appropriate.\n","At 12.10am on 24 August 2017, South Yorkshire Police (SYP) officers arrested a man on suspicion of assault. They transported him to Shepcote Lane custody suite, where the custody officer authorised his detention. During his detention, the man made threats to hang himself if his partner had taken his methadone prescription. He remained in custody until 2.21pm, when SYP officers concluded no further action would be taken in relation to the offences.\nThe custody officer arranged for SYP officers to accompany the man to the council offices, where they helped arrange for the locks to his flat to be replaced and assisted in obtaining a methadone prescription.  At 5.40pm, two council workers arrived at the man's flat to replace the locks but found him hanging from the loft hatch. They telephoned for an ambulance and paramedics pronounced him dead at the scene.\nOn 13 March 2018, following a local investigation, SYP referred this to us after identifying potential misconduct on the part of the custody officer.\nInvestigators reviewed the evidence collated from the SYP investigation, the custody CCTV footage and interviewed the custody officer. During the investigation, the investigator found an indication that the custody officer may not have accurately completed the man's pre-release risk assessment. The custody officer co-operated with the investigation and provided a detailed rationale for his decisions.\nBased on the evidence available, we were of the opinion that the custody officer had acted in accordance with detention and custody guidance and did everything possible to mitigate the risk the man posed to himself. We found no indication that the custody officer had behaved in a manner that would justify the bringing of disciplinary proceedings.\nAfter reviewing our report, SYP agreed with our findings.\n","On 23 October 2016 at around 9pm, a South Yorkshire Police officer was driving a liveried police car approaching a junction in Sheffield. The officer was driving to a police station to assist colleagues with booking a man into custody. The man had just been arrested and was being transported in a separate van. The man was reported to be behaving aggressively and the officer stated he was trying to catch up with the van in order to assist colleagues in dealing with the man on arrival at the station.\nAt the same time, a member of the public was approaching the same junction, with his wife as a passenger in the car. As he approached the triangular 'Y' junction he intended to turn right and right again at the junction, back onto the same road but in the opposite direction.\nThe member of the public turned right at the junction and the police car collided with him. The front of the police car hit the rear of the other car. Because of the collision, the man was admitted to hospital in Sheffield with spinal fractures.\nDuring the investigation, our investigators interviewed the police driver under criminal and misconduct cautions. We also examined data evidence relating to the speed of the police car.\nEvidence showed that the officer had been driving at a peak speed of 66mph in a 40mph zone approximately 1.15 seconds before the collision. In interview, the officer said they had been making use of their legal exemption from the prescribed speed limit for policing purposes. The data recorder within the car showed that the police driver did not activate the emergency equipment (siren, blue or rear flashing red lights) while using their legal exemption and prior to the collision.\nWe were not able to determine the point of collision, and therefore to establish the point on the road at which the officer applied the brakes, to determine the police car's line of sight or position in relation to the junction.\nThe Investigator was of the opinion that the officer should have reduced their speed on approaching the potential hazard posed by the emerging junction and made use of the car's emergency warning equipment. Having reviewed the evidence in conjunction with the relevant policies and procedures, the Investigator was also of the opinion that the officer's use of the legal exemption appeared not to have been proportionate, necessary and reasonable in the circumstances.\nBased on the evidence available, the Investigator was of the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find gross misconduct in respect of the officer for their standard of driving prior to the collision with the member of the public.\nWe also found indications that the officer may have committed a criminal offence under the Road Traffic Act 1988 and submitted our report and evidence to the Crown Prosecution Service (CPS) for review.\nThe CPS authorised a charge of causing injury by dangerous driving against the officer. However, the officer pleaded guilty to the lesser charge of careless driving and was given a fine and six penalty points on their driving licence.\nAlthough the force, after reviewing our report, initially agreed that the officer had a case to answer for gross misconduct, it subsequently revised its determination to misconduct, following the lesser charge of careless driving being accepted. The force provided detailed additional rationale for their determination.\nAfter careful consideration of all the evidence and of the force's rationale, we agreed that a misconduct meeting was appropriate in the circumstances.\nAt the misconduct meeting, the officer was given a written warning.\n","In August 2016 a South Yorkshire Police (SYP) officer investigated an allegation of threats to kill reported by a man. During the course of the investigation, the man who had allegedly received the threats intimated to the officer on the phone that he would take matters into his own hands. SYP officers arrested the man who had allegedly made the threats to kill. The man said that he himself had been assaulted and threatened by the other man. Police were unable to find evidence of the alleged assault or injuries to the man. They bailed and released the man and took no further action regarding the alleged assault.\nThe man who first reported the alleged threats later murdered the other man.\nDuring the investigation, our investigators obtained witness statements and reviewed a number of police documents, policies and procedures. They also interviewed the SYP officer in relation to their alleged breaches of the standards of professional behaviour in conducting the investigation.\nThe officer provided us with a written statement in which they explained that they did not perceive the comments of the man who had reported threats to kill as a threat for the other man. They believed that he was an upset victim of crime who was frustrated with police processes.\nThe evidence suggested that the man's comments, although possibly implying some level of violent intent, did not explicitly state what action he intended to take, or when he intended to take it. In the Lead Investigator's opinion, the SYP officer's assessment that the comments were borne out of frustration was understandable in the circumstances.\nAs regards the other man's claim that he had been assaulted, the officer explained in their written response that they were satisfied that their colleague had investigated the incident. They had no reason to doubt their assessment that the alleged assault had not taken place. In the Lead Investigator's view, it was reasonable for the officer not to have followed this line of enquiry, as they had relied on the overall professional judgement of another officer regarding the validity of the allegation.\nBased on the evidence available, the Lead Investigator concluded that there was insufficient evidence upon which a reasonable tribunal could conclude that the officer had a case to answer for misconduct.\nAfter reviewing our report, the force agreed with our findings.\n","On 14 June 2018, a member of staff from Aspire Drug and Alcohol Services contacted South Yorkshire Police (SYP) to ask them to carry out a 'safe and well' check on a man. The Call Resolution Officer (CRO) who answered the call confirmed that SYP would visit the man's home as a matter of priority. The Aspire staff member contacted SYP on 15 June 2018 and discovered that the check had not been conducted. On 15 June 2018, a member of staff from a homeless charity reported their concerns for the same man to SYP. Officers visited the man's home, where, after forcing entry into the property, they found the man unconscious inside. He was later pronounced dead.\nAn inquest concluded in February 2019 that the man's death was drug related.\nOur investigators obtained a copy of the incident log the CRO had created in relation to the call on 14 June 2018. They also obtained a recording of the telephone call between the CRO and Aspire, which was found not to correspond with the entries recorded on the incident log. Investigators obtained copies of relevant SYP policies, obtained statements, examined telephone records and interviewed the CRO concerned under a misconduct caution. All police officers and staff co-operated fully with this investigation.\nThe CRO admitted that the entries they recorded on the incident log did not correspond to what was discussed during the telephone call. They maintained that it was an accurate reflection of their subsequent decision not to deploy police resources, as they felt the circumstances did not warrant a police response. They also said they had been unable to contact Aspire to inform them that no officers would be deployed.\nWhile the CRO provided a persuasive explanation for the discrepancies between the telephone call transcript and their entry on the incident log, we were of the opinion that they should not have endorsed the log with what turned out to be a future action. They should have recorded their considerations, and the fact that they were unable to inform Aspire, and made arrangements to update them the next day when their office was open. Having considered all of these issues, we believed these matters could be dealt with by way of management action. We completed our investigation in November 2018.\nAfter reviewing our report, SYP agreed with our findings in respect of the CRO. They also agreed to provide guidance to all CROs with regards to the relevant policy which should take primacy in situations such as this.\n","On 14 March 2017 a woman contacted South Yorkshire Police (SYP) as she was concerned for her neighbour's welfare, given that she had not seen him for a period of time. Officers from SYP went to the man's home and were unable to make contact with him. Further calls were made by the man's friends and family over a two-day period and two more SYP officers went to the man's home, but with no success.\nThe Yorkshire Ambulance Service was called and gained entry to the property with the assistance of Yorkshire Fire and Rescue. The man was found dead in his home.\nDuring the investigation, investigators interviewed four police officers and spoke to a control room operator under the misconduct caution. We obtained witness statements from members of the public, the Yorkshire Ambulance Service and Yorkshire Fire and Rescue.\nThe investigator formed the opinion that there was sufficient evidence upon which a reasonable tribunal, properly directed, could find a case to answer for misconduct for two of the police officers for failing to pursue all reasonable lines of enquiry in locating the man and failing to adequately consider the risk factors known to them; and for a third officer for their actions when going to the man's home on 15 March.\nAfter reviewing our report, SYP agreed that the officers had breached their standards of responsibility and that there was significant learning for all three officers. They proposed to deal with this through management action so that officers can reflect on the learning from this investigation and develop their skills in relation to this area.\nWe agreed that their proposals were appropriate in the circumstances.\n"],["'Welfare and vulnerable people', 'South Yorkshire Police'","'Road traffic incidents', 'South Yorkshire Police'","'Child sexual abuse', 'South Yorkshire Police'","'Welfare and vulnerable people', 'South Yorkshire Police'","'Death and serious injury', 'Road traffic incidents', 'South Yorkshire Police'","'Death and serious injury', 'South Yorkshire Police'","'Death and serious injury', 'Welfare and vulnerable people', 'South Yorkshire Police'","'Welfare and vulnerable people', 'South Yorkshire Police'"],["<a href='https://policeconduct.gov.uk/recommendations/death-following-police-investigation-sexual-offence-south-yorkshire-police-october'>https://policeconduct.gov.uk/recommendations/death-following-police-investigation-sexual-offence-south-yorkshire-police-october<\/a>","<a href='https://policeconduct.gov.uk/recommendations/fatal-collision-south-yorkshire-police-january-2017'>https://policeconduct.gov.uk/recommendations/fatal-collision-south-yorkshire-police-january-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/handling-report-possible-grooming-south-yorkshire-police-2011'>https://policeconduct.gov.uk/recommendations/handling-report-possible-grooming-south-yorkshire-police-2011<\/a>","<a href='https://policeconduct.gov.uk/recommendations/man-takes-his-own-life-following-police-contact-south-yorkshire-police-august-2017'>https://policeconduct.gov.uk/recommendations/man-takes-his-own-life-following-police-contact-south-yorkshire-police-august-2017<\/a>","<a href='https://policeconduct.gov.uk/recommendations/police-car-collided-another-car-south-yorkshire-police-october-2016'>https://policeconduct.gov.uk/recommendations/police-car-collided-another-car-south-yorkshire-police-october-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-alleged-threats-life-south-yorkshire-police-august-2016'>https://policeconduct.gov.uk/recommendations/response-alleged-threats-life-south-yorkshire-police-august-2016<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-call-south-yorkshire-police-june-2018'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-call-south-yorkshire-police-june-2018<\/a>","<a href='https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-south-yorkshire-police-march-2017'>https://policeconduct.gov.uk/recommendations/response-concern-welfare-reports-south-yorkshire-police-march-2017<\/a>"],["1-Jun-2021","19-Jul-2018","15-Mar-2018","29-Aug-2018","23-Nov-2018","16-Aug-2018","6-Mar-2019","6-Sep-2018"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-43fb5f769e624318b9ae" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-739de71bc80ac85f1517" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-43fb5f769e624318b9ae">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4"],["Welfare and vulnerable people","Death and serious injury","Road traffic incidents","Child sexual abuse"],[4,3,2,1],[0.5,0.375,0.25,0.125]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 8 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-739de71bc80ac85f1517">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2","3","4"],["Welfare and vulnerable people","Death and serious injury","Road traffic incidents","Child sexual abuse"],[4,3,2,1],[0.5,0.375,0.25,0.125]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 8 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>

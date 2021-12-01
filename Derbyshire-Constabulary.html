@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 
@@ -87,76 +87,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -228,152 +158,6 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Police misconduct</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Forces
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="Avon-and-Somerset-Constabulary.html">Avon and Somerset</a>
-    </li>
-    <li>
-      <a href="Bedfordshire-Police.html">Bedfordshire</a>
-    </li>
-    <li>
-      <a href="British-Transport-Police.html">British Transport</a>
-    </li>
-    <li>
-      <a href="Cambridgeshire-Constabulary.html">Cambridgeshire</a>
-    </li>
-    <li>
-      <a href="Cheshire-Constabulary.html">Cheshire</a>
-    </li>
-    <li>
-      <a href="City-of-London-Police.html">City of London</a>
-    </li>
-    <li>
-      <a href="Cleveland-Police.html">Cleveland</a>
-    </li>
-    <li>
-      <a href="Cumbria-Constabulary.html">Cumbria</a>
-    </li>
-    <li>
-      <a href="Derbyshire-Constabulary.html">Derbyshire</a>
-    </li>
-    <li>
-      <a href="Devon-and-Cornwall-Constabulary.html">Devon and Cornwall</a>
-    </li>
-    <li>
-      <a href="Dorset-Police.html">Dorset</a>
-    </li>
-    <li>
-      <a href="Durham-Constabulary.html">Durham</a>
-    </li>
-    <li>
-      <a href="Essex-Police.html">Essex</a>
-    </li>
-    <li>
-      <a href="Greater-Manchester-Police.html">Greater Manchester</a>
-    </li>
-    <li>
-      <a href="Gwent-Police.html">Gwent</a>
-    </li>
-    <li>
-      <a href="Hampshire-Constabulary.html">Hampshire</a>
-    </li>
-    <li>
-      <a href="Hertfordshire-Constabulary.html">Hertfordshire</a>
-    </li>
-    <li>
-      <a href="Kent-Police.html">Kent</a>
-    </li>
-    <li>
-      <a href="Leicestershire-Police.html">Leicestershire</a>
-    </li>
-    <li>
-      <a href="Merseyside-Police.html">Merseyside</a>
-    </li>
-    <li>
-      <a href="Metropolitan-Police.html">Metropolitan</a>
-    </li>
-    <li>
-      <a href="Norfolk-Constabulary.html">Norfolk</a>
-    </li>
-    <li>
-      <a href="North-Wales-Police.html">North Wales</a>
-    </li>
-    <li>
-      <a href="North-Yorkshire-Police.html">North Yorkshire</a>
-    </li>
-    <li>
-      <a href="Northamptonshire-Police.html">Northamptonshire</a>
-    </li>
-    <li>
-      <a href="Northumbria-Police.html">Northumbria</a>
-    </li>
-    <li>
-      <a href="Nottinghamshire-Police.html">Nottinghamshire</a>
-    </li>
-    <li>
-      <a href="South-Wales-Police.html">South Wales</a>
-    </li>
-    <li>
-      <a href="South-Yorkshire-Police.html">South Yorkshire</a>
-    </li>
-    <li>
-      <a href="Staffordshire-Police.html">Staffordshire</a>
-    </li>
-    <li>
-      <a href="Suffolk-Constabulary.html">Suffolk</a>
-    </li>
-    <li>
-      <a href="Surrey-Police.html">Surrey</a>
-    </li>
-    <li>
-      <a href="Sussex-Police.html">Sussex</a>
-    </li>
-    <li>
-      <a href="Thames-Valley-Police.html">Thames Valley</a>
-    </li>
-    <li>
-      <a href="Warwickshire-Police.html">Warwickshire</a>
-    </li>
-    <li>
-      <a href="West-Mercia-Police.html">West Mercia</a>
-    </li>
-    <li>
-      <a href="West-Midlands-Police.html">West Midlands</a>
-    </li>
-    <li>
-      <a href="West-Yorkshire-Police.html">West Yorkshire</a>
-    </li>
-    <li>
-      <a href="Wiltshire-Constabulary.html">Wiltshire</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
 <div id="header">
 
@@ -530,31 +314,31 @@ Force analysis: Derbyshire Constabulary
 </h1>
 </div>
 <p>
-<strong>REPLACE FAKE DATA BEFORE PUBLISHING</strong>
+<strong>THIS DATA IS FAKE AND WILL BE REPLACED BEFORE PUBLISHING</strong>
 </p>
 <p>
 <a href="index.html">Back to main page</a>
 </p>
 <p>
-At Derbyshire Constabulary there were <strong>4 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>9 officers</strong> and <strong>0 police staff</strong>.
+At Derbyshire Constabulary there were <strong>7 cases</strong> where the IOPC felt there was a case to answer for misconduct. These cases involved <strong>7 officers</strong> and <strong>5 police staff</strong>.
 </p>
 <p>
 <strong>None</strong> of the cases referred to death or serious injury having occurred shortly after contact with police
 </p>
 <p>
-The misconduct was proven in the case of <strong>2 officers</strong> and <strong>10 staff</strong>.
+The misconduct was proven in the case of <strong>2 officers</strong> and <strong>2 staff</strong>.
 </p>
 <p>
-Out of the 9 officers and 0 staff identified as having a case to answer for misconduct, <strong>4 officers</strong> and <strong>5 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
+Out of the 7 officers and 5 staff identified as having a case to answer for misconduct, <strong>4 officers</strong> and <strong>7 staff</strong> received no further action. Please note that officers and staff can sometimes receive a sanction even if misconduct is not proven. Also, those found guilty of misconduct can face no further action.
 </p>
 <p>
-<strong>3 officers</strong> and <strong>6 staff</strong> received management action.
+<strong>6 officers</strong> and <strong>2 staff</strong> received management action.
 </p>
 <p>
-<strong>8 officers</strong> and <strong>7 staff</strong> were given a written warning.
+<strong>3 officers</strong> and <strong>3 staff</strong> were given a written warning.
 </p>
 <p>
-<strong>7 officers</strong> and <strong>6 staff</strong> were dismissed.
+<strong>7 officers</strong> and <strong>1 staff</strong> were dismissed.
 </p>
 <div id="explore-the-cases" class="section level3">
 <h3>
@@ -563,19 +347,19 @@ Explore the cases
 <p>
 Click on a link to see the full description of the case, or hover over the case content.
 </p>
-<div id="htmlwidget-26b8b8e6d74b34ce5a26" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-ab38f55453736bc82864" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-26b8b8e6d74b34ce5a26">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Actions following call reporting concern for welfare - Leicestershire Police and Derbyshire Constabulary, July 2017","Complaint of inappropriate relationship between an officer and an elderly woman - Derbyshire Police, July 2017"],["On 22 July 2017, at around 7pm, Leicestershire Police received a 999 call from a woman who said she was concerned about her friend, as she had not been able to contact her. She said her friend had alcohol addiction issues, had attempted suicide several times before and had previously been sectioned. The call handler emailed a record of the incident to Derbyshire Constabulary, as this was where the friend of the caller lived. He did not record the previous suicide attempts or the fact that the friend had been sectioned previously.\nTwo Derbyshire Constabulary officers went to the home of the woman's friend on the same evening, at around 11pm. They did not get an answer from knocking at the door. Another officer attended the following day and found the friend of the caller dead. She appeared to have died due to an overdose of medication.\nDuring the investigation, accounts were obtained from the Leicestershire Police officer and all Derbyshire Constabulary officers who were known to have been involved. We found indications of possible misconduct in respect of the Leicestershire Police call handler and served him with a notice of investigation. He responded to this in writing.  We examined a number of documents from both police forces relating to this incident.\nBased on the evidence available, the Investigator found no indication that any of the Derbyshire Constabulary officers or staff who dealt with this incident may have committed a criminal offence or behaved in a manner that would justify the bringing of disciplinary proceedings.\nThe investigation found that the Leicestershire Police call handler's actions amounted to unsatisfactory performance.\nAfter reviewing our report, Leicestershire Police agreed that the call handler's performance would be addressed with his supervisor in a debrief about learning from this case.\nWe agreed that their proposal was satisfactory.\n","A complaint was made in July 2017 that a Derbyshire Police officer had pursued an inappropriate relationship with a vulnerable elderly woman whom he had met in the course of his duties as a community beat officer. It was alleged the officer had subjected the woman to financial and emotional abuse.\nThe evidence obtained by the investigation indicated that the officer had become involved with the woman's financial matters, including withdrawing cash with her debit card on her behalf. In addition, the officer became involved with some of her accounts and was aware of large amounts of cash on the premises.\nDuring the investigation, our investigators took statements from family members and neighbours. They also interviewed the officer and examined his bank accounts examined.\nWe found insufficient evidence upon which a reasonable tribunal could find that the officer had acted in a way meant to exclude friends and family from contact with the woman, as had been alleged. There was also insufficient evidence upon which a resonable tribunal could find that the officer had befriended the woman for financial gain.\nWe found no evidence of dishonesty on the part of the officer. However, we were of the opinion that the officer had put himself in a position of compromise by the way in which he had befriended an elderly lady, and had then gone on to have involvement in her finances.\nIn our opinion, based on the evidence available, there was sufficient evidence upon which a reasonable misconduct meeting could find that the actions of the officer had breached the standards of professional behaviour, and that he may have a case to answer for misconduct. We concluded our investigation in July 2018.\nAfter reviewing our report, Derbyshire Police agreed with our opinion.The officer was found guilty of misconduct at a misconduct meeting and received a final written warning. He subsequently resigned from the force.\n"],["'Welfare and vulnerable people', 'Derbyshire Constabulary', 'Leicestershire Police'","'Welfare and vulnerable people', 'Derbyshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/actions-following-call-reporting-concern-welfare-leicestershire-police-and'>https://policeconduct.gov.uk/recommendations/actions-following-call-reporting-concern-welfare-leicestershire-police-and<\/a>","<a href='https://policeconduct.gov.uk/recommendations/complaint-inappropriate-relationship-between-officer-and-elderly-woman-derbyshire'>https://policeconduct.gov.uk/recommendations/complaint-inappropriate-relationship-between-officer-and-elderly-woman-derbyshire<\/a>"],["21-Sep-2018","17-Apr-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-ab38f55453736bc82864">{"x":{"style":"bootstrap","filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","caption":"<caption>Analysis by the BBC Shared Data Unit<\/caption>","data":[["1","2"],["Actions following call reporting concern for welfare - Leicestershire Police and Derbyshire Constabulary, July 2017","Complaint of inappropriate relationship between an officer and an elderly woman - Derbyshire Police, July 2017"],["On 22 July 2017, at around 7pm, Leicestershire Police received a 999 call from a woman who said she was concerned about her friend, as she had not been able to contact her. She said her friend had alcohol addiction issues, had attempted suicide several times before and had previously been sectioned. The call handler emailed a record of the incident to Derbyshire Constabulary, as this was where the friend of the caller lived. He did not record the previous suicide attempts or the fact that the friend had been sectioned previously.\nTwo Derbyshire Constabulary officers went to the home of the woman's friend on the same evening, at around 11pm. They did not get an answer from knocking at the door. Another officer attended the following day and found the friend of the caller dead. She appeared to have died due to an overdose of medication.\nDuring the investigation, accounts were obtained from the Leicestershire Police officer and all Derbyshire Constabulary officers who were known to have been involved. We found indications of possible misconduct in respect of the Leicestershire Police call handler and served him with a notice of investigation. He responded to this in writing.  We examined a number of documents from both police forces relating to this incident.\nBased on the evidence available, the Investigator found no indication that any of the Derbyshire Constabulary officers or staff who dealt with this incident may have committed a criminal offence or behaved in a manner that would justify the bringing of disciplinary proceedings.\nThe investigation found that the Leicestershire Police call handler's actions amounted to unsatisfactory performance.\nAfter reviewing our report, Leicestershire Police agreed that the call handler's performance would be addressed with his supervisor in a debrief about learning from this case.\nWe agreed that their proposal was satisfactory.\n","A complaint was made in July 2017 that a Derbyshire Police officer had pursued an inappropriate relationship with a vulnerable elderly woman whom he had met in the course of his duties as a community beat officer. It was alleged the officer had subjected the woman to financial and emotional abuse.\nThe evidence obtained by the investigation indicated that the officer had become involved with the woman's financial matters, including withdrawing cash with her debit card on her behalf. In addition, the officer became involved with some of her accounts and was aware of large amounts of cash on the premises.\nDuring the investigation, our investigators took statements from family members and neighbours. They also interviewed the officer and examined his bank accounts examined.\nWe found insufficient evidence upon which a reasonable tribunal could find that the officer had acted in a way meant to exclude friends and family from contact with the woman, as had been alleged. There was also insufficient evidence upon which a resonable tribunal could find that the officer had befriended the woman for financial gain.\nWe found no evidence of dishonesty on the part of the officer. However, we were of the opinion that the officer had put himself in a position of compromise by the way in which he had befriended an elderly lady, and had then gone on to have involvement in her finances.\nIn our opinion, based on the evidence available, there was sufficient evidence upon which a reasonable misconduct meeting could find that the actions of the officer had breached the standards of professional behaviour, and that he may have a case to answer for misconduct. We concluded our investigation in July 2018.\nAfter reviewing our report, Derbyshire Police agreed with our opinion.The officer was found guilty of misconduct at a misconduct meeting and received a final written warning. He subsequently resigned from the force.\n"],["'Welfare and vulnerable people', 'Derbyshire Constabulary', 'Leicestershire Police'","'Welfare and vulnerable people', 'Derbyshire Constabulary'"],["<a href='https://policeconduct.gov.uk/recommendations/actions-following-call-reporting-concern-welfare-leicestershire-police-and'>https://policeconduct.gov.uk/recommendations/actions-following-call-reporting-concern-welfare-leicestershire-police-and<\/a>","<a href='https://policeconduct.gov.uk/recommendations/complaint-inappropriate-relationship-between-officer-and-elderly-woman-derbyshire'>https://policeconduct.gov.uk/recommendations/complaint-inappropriate-relationship-between-officer-and-elderly-woman-derbyshire<\/a>"],["21-Sep-2018","17-Apr-2019"]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>heading<\/th>\n      <th>content<\/th>\n      <th>tags<\/th>\n      <th>url<\/th>\n      <th>date<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"scrollY":400,"autoWidth":true,"columnDefs":[{"targets":2,"width":"400px","render":"function(data, type, row, meta) {\nreturn type === 'display' && data.length > 1000 ?\n'<span title=\"' + data + '\">' + data.substr(0, 1000) + '...<\/span>' : data;\n}"},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 <div id="breakdown-of-cases" class="section level3">
 <h3>
 Breakdown of cases
 </h3>
-<div id="htmlwidget-77292aadf58b5a88f4f8" class="datatables html-widget" style="width:100%;height:auto;">
+<div id="htmlwidget-66631d486ee4458bee2e" class="datatables html-widget" style="width:100%;height:auto;">
 
 </div>
-<script type="application/json" data-for="htmlwidget-77292aadf58b5a88f4f8">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2"],["Welfare and vulnerable people","Leicestershire Police"],[2,1],[1,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-66631d486ee4458bee2e">{"x":{"style":"bootstrap","filter":"none","vertical":false,"caption":"<caption>Analysis by the BBC Shared Data Unit. Note: percentages add up to more than 100% because one case can have more than one tag<\/caption>","data":[["1","2"],["Welfare and vulnerable people","Leicestershire Police"],[2,1],[1,0.5]],"container":"<table class=\"table table-striped table-hover row-border order-column display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>tag<\/th>\n      <th>number of reports<\/th>\n      <th>% of 2 reports<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"bFilter":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 0, 3, \",\", \".\");\n  }"},{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <script>
